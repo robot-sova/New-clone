@@ -1,0 +1,244 @@
+/* Global font settings */
+html {
+    font-family: Verdana, sans-serif;
+    font-weight: 400;
+    font-size: 17px; /* Default size */
+    line-height: 1.6;
+    color: #ffffff; /* Adjust based on design */
+  }
+    body {
+      margin: 0;
+      width: 100%;
+      height: 100%;
+      background:#000000;
+      scroll-behavior: smooth;
+    }
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+  }
+  a{color:#ffffff;}
+  #page-content{
+    margin: 50px!important;
+  }
+  /* Buttons */
+  button, .btn {
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  #maincontent{margin: 50px}
+  /* End Global font settings */
+/*MegaMenu*/
+		 /* Default Logo Size */
+         .logo img {
+            width: 140px; /* Default width */
+            transition: width 0.3s ease-in-out; /* Smooth shrinking */
+          }
+          /* Shrink Logo in Sticky Menu */
+          .fixed .logo img {
+            width: 100px; /* Shrinks to 50% */
+          }
+           /* Desktop Logo - Visible by default */
+          .logo-desktop {
+            display: block;
+          }
+          /* Mobile Logo - Hidden by default */
+          .logo-mobile {
+            display: none;
+          }
+          /* On mobile screens, show the mobile logo and hide the desktop logo */
+          @media screen and (max-width: 768px) {
+            .logo-desktop {
+              display: none;
+            }
+            .logo-mobile {
+              display: block;
+            }
+          }
+          .logo-desktop
+          {margin:0!Important; 
+            padding:0!Important;}
+           /*-- sticky header*/
+            .sticky-header {
+              position: relative;
+              transition: all 0.3s ease-in-out;
+              min-height: 60px; /* Prevents layout shift */
+            }
+            /* Sticky effect when scrolled */
+            .fixed {
+              position: fixed;
+              top: 0;
+              width: 100%;
+              z-index: 1000;
+            }
+              /*-- end sticky header*/
+              .navbar {
+                overflow: hidden;
+                background-color: #000000;
+              }
+              .navbar a {
+                float: left;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+              }
+              .dropdown {
+                float: left;
+                overflow: hidden;
+              }
+              .dropdown .dropbtn {
+                border: none;
+                outline: none;
+                color: white;
+                background-color: inherit;
+                font: inherit;
+              }
+              .navbar a:hover,
+              .dropdown:hover .dropbtn {
+                background-color: 990000;
+              }
+              .dropdown-content {
+                position: absolute;
+                width: 100%;
+                min-height: 50px; /* Reserve space to prevent shift */
+                left: 0;
+                z-index: 1; /* Ensure it's on top */
+                visibility: hidden;
+              border-bottom: 5px solid rgba(123, 122, 122, 0.9);
+              background-color:rgba(0, 0, 0, 0.8);
+              text-align: center;
+              background-blend-mode: overlay;
+              backdrop-filter: blur(10px);
+               -webkit-backdrop-filter: blur(10px); /* Safari Support */ 
+            }
+            /* Style for dropdown links with icons */
+            .dropdown-content a {
+                display: flex;
+                align-items: center; /* Center icon and text vertically */
+                text-decoration: none;
+                font-size: 16px;
+                padding: 8px 0; /* Space between items */
+              }
+              /* Style for the SVG icon */
+              .dropdown-content a img {
+               
+                width: 25px; /* Set icon width */
+                height: 25px; /* Set icon height */
+                display: inline-block; /* Ensure inline layout */
+                margin:0 10px -6px;
+              }
+             .dropdown:hover .dropdown-content {
+                visibility: visible;
+                transition: opacity 0.5s ease, visibility 0.5s ease;
+            }
+              @media screen and (max-width: 768px) {
+                .dropdown-content {
+                    padding: 0; /* Remove padding for mobile */
+                }
+            }
+              .dropdown-content .header {
+                padding: 16px;
+                color: white;
+              }
+              .dropdown:hover .dropdown-content {
+                display: block;
+              }
+              /* Create three equal columns */
+              .column {
+                float: left;
+                flex: 1; /* Each column takes equal space */
+                width: 33.33%;
+                padding: 10px;
+                height: 100%;
+                box-sizing: border-box;
+              }
+              .column a {
+                float: none;
+                color: #fff;
+                padding: 16px;
+                text-decoration: none;
+                display: block;
+                text-align: left;
+              }
+              /* Ensure icons align correctly */
+          .column a img {
+            width: 25px;
+            height: 25px;
+            margin-right: 10px;
+          }
+              .column a:hover {
+                background-color: #990000;
+              }
+              /* Ensure row uses flexbox */
+          .row {
+            display: flex; 
+            flex-wrap: nowrap; /* Prevent wrapping */
+            justify-content: space-between; /* Distribute columns evenly */
+          }
+              /* Clear floats */
+              .row:after {
+                content: "";
+                display: table;
+                clear: both;
+              }
+             .phone-number{background-color: #990000;
+            font-size: 14px;
+           float:right!important;
+          margin: 0 30px 0 0;}
+               /* Logo Transition */
+               .logo {
+                width: 140px; /* Default Width */
+                transition: width 0.3s ease; /* Smooth resizing */
+              }
+              .fixed .logo {
+                width: 90px; /* Width when scrolled */
+              }
+              a.logo {
+              margin: 0 50px 10px 0 !important;
+              padding:10px 0 0 20px !important;
+            }
+            a.logo:hover {
+             background-color: #000000;
+            }
+             /* Hide the logo image on mobile screens */
+             @media screen and (max-width: 768px) {
+              .dropdown-content {
+                padding: 0;
+                width: 100%;
+                top: 100%; /* Ensures dropdown starts right below navbar */
+              }
+              .dropdown-content img {
+                display: none;
+              }
+                  /* Ensure dropdown images are hidden */
+                  .dropdown-content a img {
+                    display: none !important; /* Forcefully hide the images */
+                  }
+                  .dropdown .dropbtn {
+                    font-size: 15px!Important;
+                    padding: 5px 2px;;
+                  }
+                  .navbar a {
+                    padding: 5px 5px;
+                  }
+            }
+            .close-btn {
+              display: none; /* Hidden by default */
+              position: absolute;
+              bottom: 0;  /* Ensures it's at the bottom */
+              right: 0;    /* Moves it to the left */
+              background: none;
+              border: none;
+              color: white;
+              font-size: 28px;
+              font-weight: bold;
+              cursor: pointer;
+              z-index: 1001;
+            }
+          /* Show close button only on mobile */
+          @media screen and (max-width: 768px) {
+            .close-btn {
+              display: block;
+            }
+          }
+          /*MegaMenu*/

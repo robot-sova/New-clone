@@ -1,0 +1,64 @@
+---
+import MegaMenu from '../components/MegaMenu.jsx';
+import Reviews from '../components/Reviews.jsx';
+import Footer from '../components/Footer.jsx';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import type { BreadcrumbItem } from '../components/Breadcrumbs.astro';
+interface Props {
+	title?: string;
+	description?: string;
+	type?: 'website' | 'article';
+	structuredData?: object;
+	breadcrumbs?: BreadcrumbItem[];
+}
+const { 
+	title = "Astro Basics",
+	description = "Welcome to Astro Basics - A starter template for building fast websites with Astro",
+	type = "website",
+	structuredData,
+	breadcrumbs = []
+} = Astro.props;
+const canonicalURL = new URL(Astro.url.pathname, Astro.site ?? 'http://localhost:4321');
+
+const defaultStructuredData = {
+	"@context": "https://schema.org",
+	"@type": "WebSite",
+	"name": title,
+	"description": description,
+	"url": canonicalURL.toString()
+};
+const finalStructuredData = structuredData || defaultStructuredData;
+---
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+      <style is:global>
+    @import '../styles/critical.css';
+  </style>
+		<link rel="preload" href="/bg.mp4" as="video" type="video/mp4">
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+		<meta name="title" content={title} />
+		<meta name="description" content={description} />
+		<meta property="og:type" content={type} />
+		<meta property="og:url" content={canonicalURL} />
+		<meta property="og:title" content={title} />
+		<meta property="og:description" content={description} />
+		<meta property="twitter:card" content="summary_large_image" />
+		<meta property="twitter:url" content={canonicalURL} />
+		<meta property="twitter:title" content={title} />
+		<meta property="twitter:description" content={description} />
+		<script type="application/ld+json" set:html={JSON.stringify(finalStructuredData)} />	
+		</head>
+	<body>
+<MegaMenu client:load />
+	<Reviews client:idle />
+		{breadcrumbs.length > 0 && <Breadcrumbs items={breadcrumbs} />}
+		<main style="margin-top: 4rem;">
+			<slot />
+		</main>
+		<Footer client:visible/>
+	</body>
+</html>
