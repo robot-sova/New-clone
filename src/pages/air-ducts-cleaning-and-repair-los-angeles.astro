@@ -1,0 +1,16 @@
+ 
+ ---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/header/Oven.jsx'
+import { Tabs } from '../../components/tabs/Oven.jsx'
+import { Brands } from '../../components/brands/Oven.jsx'
+import '../../styles/global.css';
+
+const structuredData = {}
+--- 
+ <Layout title="Professional Air Duct Cleaning" description="Los Angeles air duct cleaning services. Cutting-edge technology to eliminate allergens, dust, and debris. Experience the difference! (323) 870-4790"
+ structuredData={structuredData}>
+ <Header client:load/>
+ <Tabs client:load/>
+ <Brands client:load>
+   </Layout>
