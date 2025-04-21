@@ -6,7 +6,133 @@ import { Tabs } from '../components/tabs/Oven.jsx'
 import { Brands } from '../components/brands/Brands.jsx'
 import '../styles/global.css';
 
-const structuredData = {}
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "@id": "https://samedayappliance.repair/dishwasher-repair-los-angeles/",
+  "name": "Same Day Appliance Repair",
+  "image": "https://same-day-appliance.repair/same-day-appliance-repair-logo.webp",
+  "logo": "https://same-day-appliance.repair/same-day-appliance-repair-logo.webp",
+  "url": "https://samedayappliance.repair/dishwasher-repair-los-angeles/",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://samedayappliance.repair/dishwasher-repair-los-angeles/"
+  },
+  "telephone": "+1-424-325-0520",
+  "priceRange": "$$$",
+  "description": "Same Day Appliance Repair provides expert dishwasher repair in Los Angeles. We fix dishwashers from top brands like Bosch, Whirlpool, KitchenAid, LG, Samsung, Miele, Thermador, and more. We offer same-day service and professional diagnostics across LA.",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "11352 Elderwood St",
+    "addressLocality": "Los Angeles",
+    "addressRegion": "CA",
+    "postalCode": "90049",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 34.073571,
+    "longitude": -118.467634
+  },
+  "sameAs": [
+    "https://www.youtube.com/@SameDayAppliance.Repair",
+    "https://www.instagram.com/samedayappliance.repair",
+    "https://www.facebook.com/samedayappliancerepairla"
+  ],
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday"
+      ],
+      "opens": "08:00",
+      "closes": "20:00"
+    }
+  ],
+  "areaServed": [/* Use your existing full service area list here */],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Dishwasher Repair Services",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Dishwasher Repair",
+          "description": "Same-day dishwasher repair in Los Angeles for issues like water not draining, dishes not cleaning, control board failure, or leaks. Service for Bosch, Whirlpool, LG, Samsung, Miele, KitchenAid, and more."
+        }
+      }
+    ]
+  },
+  "knowsAbout": [
+    "Dishwasher not draining",
+    "Dishwasher won't start",
+    "Control panel not responding",
+    "Leaking dishwasher repair",
+    "Dishwasher making loud noises",
+    "Water inlet valve replacement",
+    "Dishwasher door won't latch",
+    "Same-day dishwasher repair in Los Angeles",
+    "Eco-efficient dishwasher diagnostics",
+    "Stuck spray arm or rack repair"
+  ],
+  "brand": [
+    { "@type": "Brand", "name": "Bosch" },
+    { "@type": "Brand", "name": "Whirlpool" },
+    { "@type": "Brand", "name": "KitchenAid" },
+    { "@type": "Brand", "name": "Maytag" },
+    { "@type": "Brand", "name": "Samsung" },
+    { "@type": "Brand", "name": "LG" },
+    { "@type": "Brand", "name": "General Electric" },
+    { "@type": "Brand", "name": "Frigidaire" },
+    { "@type": "Brand", "name": "Miele" },
+    { "@type": "Brand", "name": "Electrolux" },
+    { "@type": "Brand", "name": "Kenmore" },
+    { "@type": "Brand", "name": "Cove" },
+    { "@type": "Brand", "name": "Thermador" },
+    { "@type": "Brand", "name": "Fisher & Paykel" },
+    { "@type": "Brand", "name": "Dacor" },
+    { "@type": "Brand", "name": "Viking" },
+    { "@type": "Brand", "name": "Jenn-Air" },
+    { "@type": "Brand", "name": "Blomberg" },
+    { "@type": "Brand", "name": "Bertazzoni" },
+    { "@type": "Brand", "name": "Smeg" },
+    { "@type": "Brand", "name": "Asko" }
+  ],
+  "potentialAction": [
+    {
+      "@type": "ReserveAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://same-day-appliance.repair/book/",
+        "inLanguage": "en",
+        "actionPlatform": [
+          "http://schema.org/DesktopWebPlatform",
+          "http://schema.org/MobileWebPlatform"
+        ]
+      },
+      "result": {
+        "@type": "Reservation",
+        "name": "Service Appointment"
+      }
+    },
+    {
+      "@type": "CommunicateAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "tel:+14243250520",
+        "actionPlatform": [
+          "http://schema.org/MobileWebPlatform"
+        ]
+      }
+    }
+  ]
+}
 --- 
 <Layout title="Expert Dishwasher Repair Los Angeles - Fast & Reliable" description="Fast & reliable dishwasher repair. Serving Los Angeles and nearby areas with expert technicians and quality parts. Call now:  (323) 870-4790"
 structuredData={structuredData}>
