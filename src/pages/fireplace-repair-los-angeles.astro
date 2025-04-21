@@ -6,7 +6,131 @@ import { Tabs } from '../components/tabs/Oven.jsx'
 import { Brands } from '../components/brands/Brands.jsx'
 import '../styles/global.css';
 
-const structuredData = {}
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "@id": "https://samedayappliance.repair/fireplace-repair-los-angeles/",
+  "name": "Same Day Appliance Repair",
+  "image": "https://same-day-appliance.repair/same-day-appliance-repair-logo.webp",
+  "logo": "https://same-day-appliance.repair/same-day-appliance-repair-logo.webp",
+  "url": "https://samedayappliance.repair/fireplace-repair-los-angeles/",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://samedayappliance.repair/fireplace-repair-los-angeles/"
+  },
+  "telephone": "+1-424-325-0520",
+  "priceRange": "$$$",
+  "description": "Same Day Appliance Repair provides professional fireplace repair services in Los Angeles. We service gas and electric fireplaces from top brands like Mendota, Heat & Glo, Napoleon, Regency, Valor, and more. We offer same-day diagnostics and repairs.",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "11352 Elderwood St",
+    "addressLocality": "Los Angeles",
+    "addressRegion": "CA",
+    "postalCode": "90049",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 34.073571,
+    "longitude": -118.467634
+  },
+  "sameAs": [
+    "https://www.youtube.com/@SameDayAppliance.Repair",
+    "https://www.instagram.com/samedayappliance.repair",
+    "https://www.facebook.com/samedayappliancerepairla"
+  ],
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday"
+      ],
+      "opens": "08:00",
+      "closes": "20:00"
+    }
+  ],
+  "areaServed": [/* Insert your full list of service areas */],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Fireplace Repair Services",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Fireplace Repair",
+          "description": "Same-day fireplace repair in Los Angeles for gas, electric, and insert units. We resolve ignition issues, pilot lights, remote malfunctions, fan failures, and safety shutoffs. Service available for Mendota, Heat & Glo, Regency, Valor, and more."
+        }
+      }
+    ]
+  },
+  "knowsAbout": [
+    "Fireplace not igniting",
+    "Pilot light won't stay lit",
+    "Gas fireplace repair",
+    "Electric fireplace malfunction",
+    "Fireplace remote not working",
+    "Fan not blowing warm air",
+    "Cracked firebox or burner",
+    "Thermostat or safety switch failure",
+    "Same-day fireplace diagnostics",
+    "Fireplace maintenance and servicing"
+  ],
+  "brand": [
+    { "@type": "Brand", "name": "Mendota" },
+    { "@type": "Brand", "name": "Heat & Glo" },
+    { "@type": "Brand", "name": "Napoleon" },
+    { "@type": "Brand", "name": "Lopi" },
+    { "@type": "Brand", "name": "Regency" },
+    { "@type": "Brand", "name": "Valor" },
+    { "@type": "Brand", "name": "Majestic" },
+    { "@type": "Brand", "name": "Vermont Castings" },
+    { "@type": "Brand", "name": "Kozy Heat" },
+    { "@type": "Brand", "name": "Dimplex" },
+    { "@type": "Brand", "name": "Ortal" },
+    { "@type": "Brand", "name": "Spark Modern Fires" },
+    { "@type": "Brand", "name": "Town & Country" },
+    { "@type": "Brand", "name": "European Home" },
+    { "@type": "Brand", "name": "Heatilator" },
+    { "@type": "Brand", "name": "Monessen" },
+    { "@type": "Brand", "name": "Stûv" },
+    { "@type": "Brand", "name": "Rasmussen" },
+    { "@type": "Brand", "name": "Fireplace Xtrordinair" }
+  ],
+  "potentialAction": [
+    {
+      "@type": "ReserveAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://same-day-appliance.repair/book/",
+        "inLanguage": "en",
+        "actionPlatform": [
+          "http://schema.org/DesktopWebPlatform",
+          "http://schema.org/MobileWebPlatform"
+        ]
+      },
+      "result": {
+        "@type": "Reservation",
+        "name": "Service Appointment"
+      }
+    },
+    {
+      "@type": "CommunicateAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "tel:+14243250520",
+        "actionPlatform": [
+          "http://schema.org/MobileWebPlatform"
+        ]
+      }
+    }
+  ]
+}
 --- 
 <Layout title="Expert Fireplace Repair Los Angeles - Fast & Reliable" description="Fast & reliable fireplace repair. Serving Los Angeles and nearby areas with expert technicians and quality parts. Call now:  (323) 870-4790"
 structuredData={structuredData}>
