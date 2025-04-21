@@ -6,7 +6,132 @@ import { Tabs } from '../components/tabs/Oven.jsx'
 import { Brands } from '../components/brands/Brands.jsx'
 import '../styles/global.css';
 
-const structuredData = {}
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "@id": "https://same-day-appliance.repair/bbq-grill-repair-los-angeles/",
+  "name": "Same Day Appliance Repair",
+  "image": "https://same-day-appliance.repair/same-day-appliance-repair-logo.webp",
+  "logo": "https://same-day-appliance.repair/same-day-appliance-repair-logo.webp",
+  "url": "https://same-day-appliance.repair/bbq-grill-repair-los-angeles/",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://same-day-appliance.repair/bbq-grill-repair-los-angeles/"
+  },
+  "telephone": "+1-424-325-0520",
+  "priceRange": "$$$",
+  "description": "Same Day Appliance Repair provides fast and expert BBQ grill repair services in Los Angeles. We service gas, electric, and charcoal grills from top brands like Weber, Traeger, Char-Broil, Big Green Egg, Kamado Joe, and more. Same-day service available across LA.",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "11352 Elderwood St",
+    "addressLocality": "Los Angeles",
+    "addressRegion": "CA",
+    "postalCode": "90049",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 34.073571,
+    "longitude": -118.467634
+  },
+  "sameAs": [
+    "https://www.youtube.com/@SameDayAppliance.Repair",
+    "https://www.instagram.com/samedayappliance.repair",
+    "https://www.facebook.com/samedayappliancerepairla"
+  ],
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday"
+      ],
+      "opens": "08:00",
+      "closes": "20:00"
+    }
+  ],
+  "areaServed": [/* keep your existing areaServed array unchanged */],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "BBQ Grill Repair Services",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "BBQ Grill Repair",
+          "description": "Certified BBQ grill repair in Los Angeles. We fix ignition issues, burners, temperature controls, regulators, and more for Weber, Traeger, Char-Broil, Nexgrill, Big Green Egg, Kamado Joe, and other major brands."
+        }
+      }
+    ]
+  },
+  "knowsAbout": [
+    "BBQ grill repair",
+    "Gas grill not lighting",
+    "Charcoal grill airflow issues",
+    "BBQ ignitor replacement",
+    "Grill burner problems",
+    "BBQ temperature control repair",
+    "Same-day grill repair Los Angeles",
+    "BBQ cleaning and maintenance",
+    "Weber grill service",
+    "Traeger and pellet grill troubleshooting"
+  ],
+  "brand": [
+    { "@type": "Brand", "name": "Weber" },
+    { "@type": "Brand", "name": "Traeger" },
+    { "@type": "Brand", "name": "Char-Broil" },
+    { "@type": "Brand", "name": "Nexgrill" },
+    { "@type": "Brand", "name": "Big Green Egg" },
+    { "@type": "Brand", "name": "Kamado Joe" },
+    { "@type": "Brand", "name": "Napoleon" },
+    { "@type": "Brand", "name": "Dyna-Glo" },
+    { "@type": "Brand", "name": "Broil King" },
+    { "@type": "Brand", "name": "Pit Boss" },
+    { "@type": "Brand", "name": "Blackstone" },
+    { "@type": "Brand", "name": "Cuisinart" },
+    { "@type": "Brand", "name": "Z Grills" },
+    { "@type": "Brand", "name": "Ooni" },
+    { "@type": "Brand", "name": "Coleman" },
+    { "@type": "Brand", "name": "Masterbuilt" },
+    { "@type": "Brand", "name": "George Foreman" },
+    { "@type": "Brand", "name": "Royal Gourmet" },
+    { "@type": "Brand", "name": "Kenmore" },
+    { "@type": "Brand", "name": "Lynx" }
+  ],
+  "potentialAction": [
+    {
+      "@type": "ReserveAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://same-day-appliance.repair/book/",
+        "inLanguage": "en",
+        "actionPlatform": [
+          "http://schema.org/DesktopWebPlatform",
+          "http://schema.org/MobileWebPlatform"
+        ]
+      },
+      "result": {
+        "@type": "Reservation",
+        "name": "Service Appointment"
+      }
+    },
+    {
+      "@type": "CommunicateAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "tel:+14243250520",
+        "actionPlatform": [
+          "http://schema.org/MobileWebPlatform"
+        ]
+      }
+    }
+  ]
+}
 --- 
 <Layout title="Get Expert Barbecue Grill Repair Los Angeles & Nearby Areas" description="Expert BBQ grill repair in Los Angeles & nearby areas. Fast, affordable, and guaranteed service. Call now for same day appointments! (323) 870-4790"
 structuredData={structuredData}>
