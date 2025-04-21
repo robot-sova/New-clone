@@ -82,14 +82,24 @@ export const MegaMenu = () => {
               <div className="row">
                 {[
                   [{label: "BBQ Grill Repar", href: "/bbq-grill-repair-los-angeles/" },
-                    { label: "Oven Repair", href: "/services/oven-repair-los-angeles/" },
-                  { label: "Stove Repair", href: "/stove-repair/" },
-                  "Range Repair", "Cooktop Repair", "Range Hood Repair"],
-                  [{ label: "Wachine Machine Repair", href: "/washing-machine-repair/" },, "Dryer Repair", 
-                  { label: "Dishwasher Repair", href: "/dishwasher-repair/" },"Microwave Repair","Refrigerator Repair", "Freezer Repair",  ],
-                  ["Fireplace repair", "BBQ Repair", 
-                  { label: "Wine Cooler", href: "/wine-cooler-repair/" },
-                   "Wine Cellar Repair",  ],
+                    { label: "Cooktop Repair", href: "/cooktop-repair-los-angeles/" },
+                  { label: "Dishwasher Repair", href: "/dishwasher-repair-los-angeles/" },
+                  { label: "Dryer Repair", href: "/dryer-repair-los-angeles/" },
+                  { label: "Fireplace Repair", href: "/fireplace-repair-los-angeles/" },
+                  { label: "Freezer Repair", href: "/freezer-repair-los-angeles/" },
+                 ],
+                  [ { label: "Induction Cooktop Repair", href: "/induction-cooktop-repair-los-angeles/" },
+                  { label: "Induction Cooktop Repair", href: "/induction-cooktop-repair/" },
+                  { label: "Microwave Repair", href: "/microwave-repair-los-angeles/" },
+                  { label: "Oven Repair", href: "/oven-repair-los-angeles/" },
+                  { label: "Range Hood Repair", href: "/range-hood-repair-los-angeles/" },
+                  { label: "Range Repair", href: "/range-repair-los-angeles/" },
+                 ],
+                  [{ label: "Refrigerator Repair", href: "/refrigerator-repair-los-angeles/" },
+                  { label: "Stove Repair", href: "/stove-repair-los-angeles/" },
+                  { label: "Washing Machine Repair", href: "/washing-machine-repair-los-angeles/" },
+                  { label: "Wine Cellar Repair", href: "/wine-cellar-repair-los-angeles/" },           
+                  { label: "Wine Cooler Repair", href: "/wine-cooler-repair-los-angeles/" },],
                 ].map((col, idx) => (
                   <div className="column" key={idx}>
                     {col.map((item) =>
@@ -163,14 +173,14 @@ export const MegaMenu = () => {
                 {[
                   [{label: "AC Repair", href: "/air-conditioner-repair-los-angeles/" },
                     { label: "Air Duct Cleaning", href: "/air-ducts-cleaning-and-repair-los-angeles/" },
-
-                  { label: "Stove Repair", href: "/stove-repair/" },
-                  "Range Repair", "Cooktop Repair", "Range Hood Repair"],
-                  [{ label: "Wachine Machine Repair", href: "/washing-machine-repair/" },, "Dryer Repair", 
-                  { label: "Dishwasher Repair", href: "/dishwasher-repair/" },"Microwave Repair","Refrigerator Repair", "Freezer Repair",  ],
-                  ["Fireplace repair", "BBQ Repair", 
-                  { label: "Wine Cooler", href: "/wine-cooler-repair/" },
-                   "Wine Cellar Repair",  ],
+                    { label: "Furnace Repair", href: "/furnace-repair-los-angeles/" },
+    
+                 ],
+                  [ { label: "Heat Pump Repair", href: "/heat-pump-repair-los-angeles/" },
+                  { label: "Heat Pump Repair", href: "/heat-pump-repair-los-angeles/" },
+                  { label: "HVAC Repair", href: "/hvac-repair-los-angeles/" },  ],
+                  [ { label: "Wall Heater Repair", href: "/wall-heater-repair-los-angeles/" },
+                  { label: "Water Heater Repair", href: "/water-heater-repair-los-angeles/" },],
                 ].map((col, idx) => (
                   <div className="column" key={idx}>
                     {col.map((item) =>
