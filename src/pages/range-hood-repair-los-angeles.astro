@@ -7,7 +7,128 @@ import { Tabs } from '../components/tabs/Oven.jsx'
 import { Brands } from '../components/brands/Brands.jsx'
 import '../styles/global.css';
 
-const structuredData = {}
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "@id": "https://samedayappliance.repair/services/range-hood-repair-los-angeles/",
+  "name": "Same Day Appliance Repair",
+  "image": "https://same-day-appliance.repair/same-day-appliance-repair-logo.webp",
+  "logo": "https://same-day-appliance.repair/same-day-appliance-repair-logo.webp",
+  "url": "https://samedayappliance.repair/services/range-hood-repair-los-angeles/",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://samedayappliance.repair/services/range-hood-repair-los-angeles/"
+  },
+  "telephone": "+1-424-325-0520",
+  "priceRange": "$$$",
+  "description": "Same Day Appliance Repair provides professional range hood repair services in Los Angeles. We service ducted and ductless hoods, under-cabinet, wall-mounted, and island range hoods from top brands like Zephyr, Viking, Thermador, KitchenAid, and more.",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "11352 Elderwood St",
+    "addressLocality": "Los Angeles",
+    "addressRegion": "CA",
+    "postalCode": "90049",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 34.073571,
+    "longitude": -118.467634
+  },
+  "sameAs": [
+    "https://www.youtube.com/@SameDayAppliance.Repair",
+    "https://www.instagram.com/samedayappliance.repair",
+    "https://www.facebook.com/samedayappliancerepairla"
+  ],
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday"
+      ],
+      "opens": "08:00",
+      "closes": "20:00"
+    }
+  ],
+  "areaServed": [/* Insert full service area list here */],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Range Hood Repair Services",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Range Hood Repair",
+          "description": "Same-day repair for all types of range hoods including wall-mounted, under-cabinet, island, and insert models. We resolve fan issues, lighting problems, noise, and ventilation faults. Brands serviced include Zephyr, Thermador, Viking, Bosch, and more."
+        }
+      }
+    ]
+  },
+  "knowsAbout": [
+    "Range hood not working",
+    "Range hood fan replacement",
+    "Range hood making noise",
+    "Range hood lights not turning on",
+    "Ductless range hood repair",
+    "Wall-mounted hood diagnostics",
+    "Island range hood motor issues",
+    "Grease filter cleaning and replacement",
+    "Same-day range hood repair Los Angeles",
+    "Range hood control board failure"
+  ],
+  "brand": [
+    { "@type": "Brand", "name": "Viking" },
+    { "@type": "Brand", "name": "Thermador" },
+    { "@type": "Brand", "name": "GE Monogram" },
+    { "@type": "Brand", "name": "LG Electronics" },
+    { "@type": "Brand", "name": "Miele" },
+    { "@type": "Brand", "name": "Whirlpool" },
+    { "@type": "Brand", "name": "Zephyr" },
+    { "@type": "Brand", "name": "KitchenAid" },
+    { "@type": "Brand", "name": "Bosch" },
+    { "@type": "Brand", "name": "JennAir" },
+    { "@type": "Brand", "name": "Bertazzoni" },
+    { "@type": "Brand", "name": "BlueStar" },
+    { "@type": "Brand", "name": "Electrolux" },
+    { "@type": "Brand", "name": "Smeg" },
+    { "@type": "Brand", "name": "La Cornue" },
+    { "@type": "Brand", "name": "Broan" }
+  ],
+  "potentialAction": [
+    {
+      "@type": "ReserveAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://same-day-appliance.repair/book/",
+        "inLanguage": "en",
+        "actionPlatform": [
+          "http://schema.org/DesktopWebPlatform",
+          "http://schema.org/MobileWebPlatform"
+        ]
+      },
+      "result": {
+        "@type": "Reservation",
+        "name": "Service Appointment"
+      }
+    },
+    {
+      "@type": "CommunicateAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "tel:+14243250520",
+        "actionPlatform": [
+          "http://schema.org/MobileWebPlatform"
+        ]
+      }
+    }
+  ]
+}
 --- 
 <Layout title="Expert Range Hood Repair Los Angeles - Fast & Reliable" description="Fast & reliable range hood repair. Serving Los Angeles and nearby areas with expert technicians and quality parts. Call now:  (323) 870-4790"
 structuredData={structuredData}>

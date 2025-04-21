@@ -6,7 +6,128 @@ import { Tabs } from '../components/tabs/Oven.jsx'
 import { Brands } from '../components/brands/Brands.jsx'
 import '../styles/global.css';
 
-const structuredData = {}
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "@id": "https://samedayappliance.repair/microwave-repair-los-angeles/",
+  "name": "Same Day Appliance Repair",
+  "image": "https://same-day-appliance.repair/same-day-appliance-repair-logo.webp",
+  "logo": "https://same-day-appliance.repair/same-day-appliance-repair-logo.webp",
+  "url": "https://samedayappliance.repair/microwave-repair-los-angeles/",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://samedayappliance.repair/microwave-repair-los-angeles/"
+  },
+  "telephone": "+1-424-325-0520",
+  "priceRange": "$$$",
+  "description": "Same Day Appliance Repair offers expert microwave repair services in Los Angeles. We fix countertop, built-in, and over-the-range microwaves from top brands like Samsung, LG, Panasonic, Whirlpool, GE, Bosch, and more. Same-day appointments available.",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "11352 Elderwood St",
+    "addressLocality": "Los Angeles",
+    "addressRegion": "CA",
+    "postalCode": "90049",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 34.073571,
+    "longitude": -118.467634
+  },
+  "sameAs": [
+    "https://www.youtube.com/@SameDayAppliance.Repair",
+    "https://www.instagram.com/samedayappliance.repair",
+    "https://www.facebook.com/samedayappliancerepairla"
+  ],
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday"
+      ],
+      "opens": "08:00",
+      "closes": "20:00"
+    }
+  ],
+  "areaServed": [/* Insert full service area array */],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Microwave Repair Services",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Microwave Repair",
+          "description": "Same-day microwave repair in Los Angeles for countertop, built-in, and over-the-range models. We fix issues like no power, not heating, sparking, keypad failure, and turntable problems. Service for Samsung, LG, GE, Whirlpool, and more."
+        }
+      }
+    ]
+  },
+  "knowsAbout": [
+    "Microwave not heating",
+    "Microwave turntable not spinning",
+    "Microwave making sparks",
+    "Microwave not turning on",
+    "Keypad or display not working",
+    "Microwave door not closing",
+    "Over-the-range microwave repair",
+    "Built-in microwave diagnostics",
+    "Microwave humming or buzzing",
+    "Same-day microwave repair Los Angeles"
+  ],
+  "brand": [
+    { "@type": "Brand", "name": "Panasonic" },
+    { "@type": "Brand", "name": "Samsung" },
+    { "@type": "Brand", "name": "GE Appliances" },
+    { "@type": "Brand", "name": "LG Electronics" },
+    { "@type": "Brand", "name": "Sharp" },
+    { "@type": "Brand", "name": "Whirlpool" },
+    { "@type": "Brand", "name": "Wolf" },
+    { "@type": "Brand", "name": "Thermador" },
+    { "@type": "Brand", "name": "Toshiba" },
+    { "@type": "Brand", "name": "Frigidaire" },
+    { "@type": "Brand", "name": "Bosch" },
+    { "@type": "Brand", "name": "KitchenAid" },
+    { "@type": "Brand", "name": "Kenmore" },
+    { "@type": "Brand", "name": "Miele" },
+    { "@type": "Brand", "name": "Breville" },
+    { "@type": "Brand", "name": "Dacor" }
+  ],
+  "potentialAction": [
+    {
+      "@type": "ReserveAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://same-day-appliance.repair/book/",
+        "inLanguage": "en",
+        "actionPlatform": [
+          "http://schema.org/DesktopWebPlatform",
+          "http://schema.org/MobileWebPlatform"
+        ]
+      },
+      "result": {
+        "@type": "Reservation",
+        "name": "Service Appointment"
+      }
+    },
+    {
+      "@type": "CommunicateAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "tel:+14243250520",
+        "actionPlatform": [
+          "http://schema.org/MobileWebPlatform"
+        ]
+      }
+    }
+  ]
+}
 --- 
 <Layout title="Expert Microwave Repair Los Angeles - Fast & Reliable" description="Fast & reliable microwave repair. Serving Los Angeles and nearby areas with expert technicians and quality parts. Call now:  (323) 870-4790"
 structuredData={structuredData}>

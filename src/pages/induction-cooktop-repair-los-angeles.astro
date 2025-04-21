@@ -6,7 +6,128 @@ import { Tabs } from '../components/tabs/Oven.jsx'
 import { Brands } from '../components/brands/Brands.jsx'
 import '../styles/global.css';
 
-const structuredData = {}
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "@id": "https://samedayappliance.repair/induction-cooktop-repair-los-angeles/",
+  "name": "Same Day Appliance Repair",
+  "image": "https://same-day-appliance.repair/same-day-appliance-repair-logo.webp",
+  "logo": "https://same-day-appliance.repair/same-day-appliance-repair-logo.webp",
+  "url": "https://samedayappliance.repair/induction-cooktop-repair-los-angeles/",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://samedayappliance.repair/induction-cooktop-repair-los-angeles/"
+  },
+  "telephone": "+1-424-325-0520",
+  "priceRange": "$$$",
+  "description": "Same Day Appliance Repair provides professional induction cooktop repair in Los Angeles. We fix temperature issues, touch controls, cracked glass tops, and more for major brands like Bosch, Samsung, GE, Wolf, Thermador, and others. Same-day service available.",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "11352 Elderwood St",
+    "addressLocality": "Los Angeles",
+    "addressRegion": "CA",
+    "postalCode": "90049",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 34.073571,
+    "longitude": -118.467634
+  },
+  "sameAs": [
+    "https://www.youtube.com/@SameDayAppliance.Repair",
+    "https://www.instagram.com/samedayappliance.repair",
+    "https://www.facebook.com/samedayappliancerepairla"
+  ],
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday"
+      ],
+      "opens": "08:00",
+      "closes": "20:00"
+    }
+  ],
+  "areaServed": [/* Insert your full area list here */],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Induction Cooktop Repair Services",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Induction Cooktop Repair",
+          "description": "Same-day repair for induction cooktops with problems like unresponsive touch controls, cracked glass, inconsistent heating, or unit not turning on. We service Bosch, Samsung, GE, Thermador, Wolf, and more."
+        }
+      }
+    ]
+  },
+  "knowsAbout": [
+    "Induction cooktop not working",
+    "Cooktop glass cracked",
+    "Cooktop not detecting cookware",
+    "Temperature fluctuation issues",
+    "Control panel not responding",
+    "Induction coil malfunction",
+    "Electric cooktop repair",
+    "Same-day induction cooktop repair",
+    "Touch sensor issues",
+    "Built-in cooktop diagnostics"
+  ],
+  "brand": [
+    { "@type": "Brand", "name": "Bosch" },
+    { "@type": "Brand", "name": "Samsung" },
+    { "@type": "Brand", "name": "GE Appliances" },
+    { "@type": "Brand", "name": "LG Electronics" },
+    { "@type": "Brand", "name": "Wolf" },
+    { "@type": "Brand", "name": "Whirlpool" },
+    { "@type": "Brand", "name": "Fisher & Paykel" },
+    { "@type": "Brand", "name": "Thermador" },
+    { "@type": "Brand", "name": "Viking" },
+    { "@type": "Brand", "name": "Frigidaire" },
+    { "@type": "Brand", "name": "Cove" },
+    { "@type": "Brand", "name": "KitchenAid" },
+    { "@type": "Brand", "name": "Jenn-Air" },
+    { "@type": "Brand", "name": "Miele" },
+    { "@type": "Brand", "name": "Bertazzoni" },
+    { "@type": "Brand", "name": "ZLINE Kitchen" }
+  ],
+  "potentialAction": [
+    {
+      "@type": "ReserveAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://same-day-appliance.repair/book/",
+        "inLanguage": "en",
+        "actionPlatform": [
+          "http://schema.org/DesktopWebPlatform",
+          "http://schema.org/MobileWebPlatform"
+        ]
+      },
+      "result": {
+        "@type": "Reservation",
+        "name": "Service Appointment"
+      }
+    },
+    {
+      "@type": "CommunicateAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "tel:+14243250520",
+        "actionPlatform": [
+          "http://schema.org/MobileWebPlatform"
+        ]
+      }
+    }
+  ]
+}
 --- 
 <Layout title="Same Day Induction Cooktop Repair Los Angeles & Nearby Areas" description="Fast & reliable induction repair. Serving Los Angeles and nearby areas with expert technicians and quality parts. Call now:  (323) 870-4790"
 structuredData={structuredData}>
