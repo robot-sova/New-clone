@@ -177,7 +177,6 @@ export const MegaMenu = () => {
     
                  ],
                   [ { label: "Heat Pump Repair", href: "/heat-pump-repair-los-angeles/" },
-                  { label: "Heat Pump Repair", href: "/heat-pump-repair-los-angeles/" },
                   { label: "HVAC Repair", href: "/hvac-repair-los-angeles/" },  ],
                   [ { label: "Wall Heater Repair", href: "/wall-heater-repair-los-angeles/" },
                   { label: "Water Heater Repair", href: "/water-heater-repair-los-angeles/" },],
