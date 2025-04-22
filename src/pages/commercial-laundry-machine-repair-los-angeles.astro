@@ -6,7 +6,127 @@ import { Tabs } from '../components/tabs/Oven.jsx'
 import { Brands } from '../components/brands/Brands.jsx'
 import '../styles/global.css';
 
-const structuredData = {}
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "@id": "https://samedayappliance.repair/commercial-laundry-machine-repair-los-angeles/",
+  "name": "Same Day Appliance Repair",
+  "image": "https://same-day-appliance.repair/same-day-appliance-repair-logo.webp",
+  "logo": "https://same-day-appliance.repair/same-day-appliance-repair-logo.webp",
+  "url": "https://samedayappliance.repair/commercial-laundry-machine-repair-los-angeles/",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://samedayappliance.repair/commercial-laundry-machine-repair-los-angeles/"
+  },
+  "telephone": "+1-424-325-0520",
+  "priceRange": "$$$",
+  "description": "Same Day Appliance Repair offers expert commercial laundry machine repair in Los Angeles. We fix commercial washers and dryers for laundromats, hotels, hospitals, and multi-housing facilities. Fast service for leading brands like Electrolux, Pitco, Turbo Air, and more.",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "11352 Elderwood St",
+    "addressLocality": "Los Angeles",
+    "addressRegion": "CA",
+    "postalCode": "90049",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 34.073571,
+    "longitude": -118.467634
+  },
+  "sameAs": [
+    "https://www.youtube.com/@SameDayAppliance.Repair",
+    "https://www.instagram.com/samedayappliance.repair",
+    "https://www.facebook.com/samedayappliancerepairla"
+  ],
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday"
+      ],
+      "opens": "08:00",
+      "closes": "20:00"
+    }
+  ],
+  "areaServed": [/* Insert service areas here */],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Commercial Laundry Machine Repair Services",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Commercial Washer & Dryer Repair",
+          "description": "Same-day repair for commercial washing machines and dryers used in laundromats, hotels, and other businesses. We handle electrical faults, drainage issues, spinning malfunctions, and heating problems for major commercial brands."
+        }
+      }
+    ]
+  },
+  "knowsAbout": [
+    "Commercial washer not spinning",
+    "Dryer not heating",
+    "Drum not rotating",
+    "Error codes on commercial washers",
+    "Water not draining in washing machine",
+    "Dryer ventilation blockages",
+    "Washer door won’t lock",
+    "Same-day commercial laundry machine repair Los Angeles",
+    "High-capacity washer diagnostics",
+    "Coin-operated laundry equipment repair"
+  ],
+  "brand": [
+    { "@type": "Brand", "name": "Vulcan" },
+    { "@type": "Brand", "name": "Wolf" },
+    { "@type": "Brand", "name": "Garland" },
+    { "@type": "Brand", "name": "Southbend" },
+    { "@type": "Brand", "name": "Imperial" },
+    { "@type": "Brand", "name": "Blodgett" },
+    { "@type": "Brand", "name": "US Range" },
+    { "@type": "Brand", "name": "Montague" },
+    { "@type": "Brand", "name": "Bakers Pride" },
+    { "@type": "Brand", "name": "BlueStar" },
+    { "@type": "Brand", "name": "Electrolux" },
+    { "@type": "Brand", "name": "American Range" },
+    { "@type": "Brand", "name": "Jade Range" },
+    { "@type": "Brand", "name": "Pitco" },
+    { "@type": "Brand", "name": "Turbo Air" }
+  ],
+  "potentialAction": [
+    {
+      "@type": "ReserveAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://same-day-appliance.repair/book/",
+        "inLanguage": "en",
+        "actionPlatform": [
+          "http://schema.org/DesktopWebPlatform",
+          "http://schema.org/MobileWebPlatform"
+        ]
+      },
+      "result": {
+        "@type": "Reservation",
+        "name": "Service Appointment"
+      }
+    },
+    {
+      "@type": "CommunicateAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "tel:+14243250520",
+        "actionPlatform": [
+          "http://schema.org/MobileWebPlatform"
+        ]
+      }
+    }
+  ]
+}
 --- 
 <Layout title="Commercial Laundry Machine Repair Los Angeles & Nearby Areas" description="Fast & reliable commercial laundry machine repair. Serving Los Angeles and nearby areas with expert technicians and quality parts. Call now:  (323) 870-4790"
 structuredData={structuredData}>
