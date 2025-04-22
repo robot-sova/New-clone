@@ -168,7 +168,7 @@ export const MegaMenu = () => {
               HVAC <ArrowIcon isOpen={openDropdown === "Household"} />
             </a></button>
             <div className={`dropdown-content ${openDropdown === "Household" ? "show" : ""}`}>
-              <h3>High-End Appliances We Repair</h3>
+              <h3>Home Appliances We Repair</h3>
               <div className="row">
                 {[
                   [{label: "AC Repair", href: "/air-conditioner-repair-los-angeles/" },
