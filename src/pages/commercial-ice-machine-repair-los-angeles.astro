@@ -6,7 +6,128 @@ import { Tabs } from '../components/tabs/Oven.jsx'
 import { Brands } from '../components/brands/Brands.jsx'
 import '../styles/global.css';
 
-const structuredData = {}
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "@id": "https://samedayappliance.repair/commercial-ice-machine-repair-los-angeles/",
+  "name": "Same Day Appliance Repair",
+  "image": "https://same-day-appliance.repair/same-day-appliance-repair-logo.webp",
+  "logo": "https://same-day-appliance.repair/same-day-appliance-repair-logo.webp",
+  "url": "https://samedayappliance.repair/commercial-ice-machine-repair-los-angeles/",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://samedayappliance.repair/commercial-ice-machine-repair-los-angeles/"
+  },
+  "telephone": "+1-424-325-0520",
+  "priceRange": "$$$",
+  "description": "Same Day Appliance Repair offers professional commercial ice machine repair in Los Angeles. We fix undercounter, modular, and countertop ice machines from Scotsman, Hoshizaki, Manitowoc, and other major commercial brands. Same-day availability for bars, restaurants, and hotels.",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "11352 Elderwood St",
+    "addressLocality": "Los Angeles",
+    "addressRegion": "CA",
+    "postalCode": "90049",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 34.073571,
+    "longitude": -118.467634
+  },
+  "sameAs": [
+    "https://www.youtube.com/@SameDayAppliance.Repair",
+    "https://www.instagram.com/samedayappliance.repair",
+    "https://www.facebook.com/samedayappliancerepairla"
+  ],
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday"
+      ],
+      "opens": "08:00",
+      "closes": "20:00"
+    }
+  ],
+  "areaServed": [/* Insert service areas here */],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Commercial Ice Machine Repair Services",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Commercial Ice Machine Repair",
+          "description": "We repair ice makers and commercial ice machines for restaurants, bars, and offices. Same-day repair for issues like low ice production, water leakage, filter blockages, and cooling system failure. We support leading brands including Scotsman, Hoshizaki, and Manitowoc."
+        }
+      }
+    ]
+  },
+  "knowsAbout": [
+    "Ice machine not making ice",
+    "Low ice production",
+    "Ice tastes bad",
+    "Water leaking from ice maker",
+    "Dirty or clogged filters",
+    "Ice thickness problems",
+    "Ice maker won't power on",
+    "Same-day commercial ice machine repair Los Angeles",
+    "Restaurant and bar ice equipment",
+    "Industrial ice maker diagnostics"
+  ],
+  "brand": [
+    { "@type": "Brand", "name": "Scotsman" },
+    { "@type": "Brand", "name": "Hoshizaki" },
+    { "@type": "Brand", "name": "Manitowoc" },
+    { "@type": "Brand", "name": "Ice-O-Matic" },
+    { "@type": "Brand", "name": "Follett" },
+    { "@type": "Brand", "name": "Kold-Draft" },
+    { "@type": "Brand", "name": "U-Line" },
+    { "@type": "Brand", "name": "Maxx Ice" },
+    { "@type": "Brand", "name": "Bluestone" },
+    { "@type": "Brand", "name": "Cornelius" },
+    { "@type": "Brand", "name": "Whynter" },
+    { "@type": "Brand", "name": "Sub-Zero" },
+    { "@type": "Brand", "name": "Frigidaire" },
+    { "@type": "Brand", "name": "GE Appliances" },
+    { "@type": "Brand", "name": "Viking" },
+    { "@type": "Brand", "name": "True Refrigeration" }
+  ],
+  "potentialAction": [
+    {
+      "@type": "ReserveAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://same-day-appliance.repair/book/",
+        "inLanguage": "en",
+        "actionPlatform": [
+          "http://schema.org/DesktopWebPlatform",
+          "http://schema.org/MobileWebPlatform"
+        ]
+      },
+      "result": {
+        "@type": "Reservation",
+        "name": "Service Appointment"
+      }
+    },
+    {
+      "@type": "CommunicateAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "tel:+14243250520",
+        "actionPlatform": [
+          "http://schema.org/MobileWebPlatform"
+        ]
+      }
+    }
+  ]
+}
 --- 
  <Layout title="Commercial Ice Machine Repair Los Angeles & Nearby Areas" description="Fast & reliable commercial ice machine repair. Serving Los Angeles and nearby areas with expert technicians and quality parts. Call now:  (323) 870-4790"
  structuredData={structuredData}>
