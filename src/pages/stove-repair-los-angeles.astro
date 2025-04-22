@@ -6,7 +6,133 @@ import { Tabs } from '../components/tabs/Oven.jsx'
 import { Brands } from '../components/brands/Brands.jsx'
 import '../styles/global.css';
 
-const structuredData = {}
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "@id": "https://samedayappliance.repair/services/stove-repair-los-angeles/",
+  "name": "Same Day Appliance Repair",
+  "image": "https://same-day-appliance.repair/same-day-appliance-repair-logo.webp",
+  "logo": "https://same-day-appliance.repair/same-day-appliance-repair-logo.webp",
+  "url": "https://samedayappliance.repair/services/stove-repair-los-angeles/",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://samedayappliance.repair/services/stove-repair-los-angeles/"
+  },
+  "telephone": "+1-424-325-0520",
+  "priceRange": "$$$",
+  "description": "Same Day Appliance Repair provides expert stove repair services in Los Angeles. We fix gas, electric, induction, and dual-fuel stoves from top brands like Whirlpool, Samsung, GE, KitchenAid, Wolf, Thermador, and more. Same-day appointments available.",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "11352 Elderwood St",
+    "addressLocality": "Los Angeles",
+    "addressRegion": "CA",
+    "postalCode": "90049",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 34.073571,
+    "longitude": -118.467634
+  },
+  "sameAs": [
+    "https://www.youtube.com/@SameDayAppliance.Repair",
+    "https://www.instagram.com/samedayappliance.repair",
+    "https://www.facebook.com/samedayappliancerepairla"
+  ],
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday"
+      ],
+      "opens": "08:00",
+      "closes": "20:00"
+    }
+  ],
+  "areaServed": [/* Insert service areas here */],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Stove Repair Services",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Stove Repair",
+          "description": "We service and repair gas, electric, induction, and dual-fuel stoves. Whether it's an issue with burners, heating elements, control panels, or igniters, we provide same-day stove repair for all major appliance brands."
+        }
+      }
+    ]
+  },
+  "knowsAbout": [
+    "Gas stove burner not lighting",
+    "Electric stove not heating",
+    "Stove control panel issues",
+    "Induction stove not detecting cookware",
+    "Stove surface element repair",
+    "Oven-stove combo repair",
+    "Dual-fuel range repair",
+    "Same-day stove repair in Los Angeles",
+    "Cracked glass cooktop replacement",
+    "Stove not maintaining temperature"
+  ],
+  "brand": [
+    { "@type": "Brand", "name": "Whirlpool" },
+    { "@type": "Brand", "name": "Samsung" },
+    { "@type": "Brand", "name": "GE Appliances" },
+    { "@type": "Brand", "name": "LG Electronics" },
+    { "@type": "Brand", "name": "Maytag" },
+    { "@type": "Brand", "name": "Bosch" },
+    { "@type": "Brand", "name": "Frigidaire" },
+    { "@type": "Brand", "name": "Kenmore" },
+    { "@type": "Brand", "name": "Electrolux" },
+    { "@type": "Brand", "name": "Amana" },
+    { "@type": "Brand", "name": "KitchenAid" },
+    { "@type": "Brand", "name": "Jenn-Air" },
+    { "@type": "Brand", "name": "Haier" },
+    { "@type": "Brand", "name": "Miele" },
+    { "@type": "Brand", "name": "Thermador" },
+    { "@type": "Brand", "name": "Wolf" },
+    { "@type": "Brand", "name": "Viking" },
+    { "@type": "Brand", "name": "Dacor" },
+    { "@type": "Brand", "name": "Fisher & Paykel" },
+    { "@type": "Brand", "name": "Bertazzoni" },
+    { "@type": "Brand", "name": "Gaggenau" }
+  ],
+  "potentialAction": [
+    {
+      "@type": "ReserveAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://same-day-appliance.repair/book/",
+        "inLanguage": "en",
+        "actionPlatform": [
+          "http://schema.org/DesktopWebPlatform",
+          "http://schema.org/MobileWebPlatform"
+        ]
+      },
+      "result": {
+        "@type": "Reservation",
+        "name": "Service Appointment"
+      }
+    },
+    {
+      "@type": "CommunicateAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "tel:+14243250520",
+        "actionPlatform": [
+          "http://schema.org/MobileWebPlatform"
+        ]
+      }
+    }
+  ]
+}
 --- 
 <Layout title="Same Day Stove Repair Los Angeles - Fast & Reliable" description="Fast & reliable same day stove repair. Serving Los Angeles and nearby areas with expert technicians and quality parts. Call now:  (323) 870-4790"
 structuredData={structuredData}>

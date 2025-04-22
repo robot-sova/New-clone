@@ -6,7 +6,128 @@ import { Tabs } from '../components/tabs/Oven.jsx'
 import { Brands } from '../components/brands/Brands.jsx'
 import '../styles/global.css';
 
-const structuredData = {}
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "@id": "https://samedayappliance.repair/services/wine-cooler-repair-los-angeles/",
+  "name": "Same Day Appliance Repair",
+  "image": "https://same-day-appliance.repair/same-day-appliance-repair-logo.webp",
+  "logo": "https://same-day-appliance.repair/same-day-appliance-repair-logo.webp",
+  "url": "https://samedayappliance.repair/services/wine-cooler-repair-los-angeles/",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://samedayappliance.repair/services/wine-cooler-repair-los-angeles/"
+  },
+  "telephone": "+1-424-325-0520",
+  "priceRange": "$$$",
+  "description": "Same Day Appliance Repair provides fast and expert wine cooler repair services in Los Angeles. We repair single-zone, dual-zone, and built-in wine coolers from top brands like Sub-Zero, Thermador, Vinotemp, GE, Samsung, and more.",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "11352 Elderwood St",
+    "addressLocality": "Los Angeles",
+    "addressRegion": "CA",
+    "postalCode": "90049",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 34.073571,
+    "longitude": -118.467634
+  },
+  "sameAs": [
+    "https://www.youtube.com/@SameDayAppliance.Repair",
+    "https://www.instagram.com/samedayappliance.repair",
+    "https://www.facebook.com/samedayappliancerepairla"
+  ],
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday"
+      ],
+      "opens": "08:00",
+      "closes": "20:00"
+    }
+  ],
+  "areaServed": [/* Insert service areas here */],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Wine Cooler Repair Services",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Wine Cooler Repair",
+          "description": "We offer same-day repair for wine coolers with temperature issues, compressor failure, fan noise, power problems, and more. Servicing built-in and freestanding models from leading brands including Sub-Zero, Vinotemp, Whirlpool, GE, and others."
+        }
+      }
+    ]
+  },
+  "knowsAbout": [
+    "Wine cooler not cooling",
+    "Compressor not running",
+    "Wine fridge fan noise",
+    "Temperature fluctuation",
+    "LED display not working",
+    "Door won't seal properly",
+    "Single-zone wine cooler issues",
+    "Dual-zone wine cooler problems",
+    "Built-in wine cooler diagnostics",
+    "Same-day wine fridge repair Los Angeles"
+  ],
+  "brand": [
+    { "@type": "Brand", "name": "Whynter" },
+    { "@type": "Brand", "name": "Samsung" },
+    { "@type": "Brand", "name": "GE Appliances" },
+    { "@type": "Brand", "name": "LG Electronics" },
+    { "@type": "Brand", "name": "Haier" },
+    { "@type": "Brand", "name": "Vinotemp" },
+    { "@type": "Brand", "name": "Magic Chef" },
+    { "@type": "Brand", "name": "Thermador" },
+    { "@type": "Brand", "name": "Sub-Zero" },
+    { "@type": "Brand", "name": "Frigidaire" },
+    { "@type": "Brand", "name": "NewAir" },
+    { "@type": "Brand", "name": "KitchenAid" },
+    { "@type": "Brand", "name": "Danby" },
+    { "@type": "Brand", "name": "Miele" },
+    { "@type": "Brand", "name": "Viking" },
+    { "@type": "Brand", "name": "Whirlpool" }
+  ],
+  "potentialAction": [
+    {
+      "@type": "ReserveAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://same-day-appliance.repair/book/",
+        "inLanguage": "en",
+        "actionPlatform": [
+          "http://schema.org/DesktopWebPlatform",
+          "http://schema.org/MobileWebPlatform"
+        ]
+      },
+      "result": {
+        "@type": "Reservation",
+        "name": "Service Appointment"
+      }
+    },
+    {
+      "@type": "CommunicateAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "tel:+14243250520",
+        "actionPlatform": [
+          "http://schema.org/MobileWebPlatform"
+        ]
+      }
+    }
+  ]
+}
 --- 
 <Layout title="Expert Wine Cooler Repair Los Angeles - Fast & Reliable" description="Fast & reliable wine cooler repair. Serving Los Angeles and nearby areas with expert technicians and quality parts. Call now:  (323) 870-4790"
 structuredData={structuredData}>
