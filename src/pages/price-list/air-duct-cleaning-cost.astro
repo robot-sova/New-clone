@@ -4,7 +4,84 @@ import Offers from '../components/Offers.jsx'
 import { Brands } from '../components/brands/Brands.jsx'
 import '../styles/global.css';
 import "../../components/css/style_price.css";
-const structuredData = {}
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "serviceType": "Air Duct Cleaning",
+  "name": "Air Duct Cleaning Cost - Same Day Appliance Repair",
+  "url": "https://samedayappliance.repair/air-duct-cleaning-cost/",
+  "provider": {
+    "@type": "LocalBusiness",
+    "name": "Same Day Appliance Repair",
+    "image": "https://samedayappliance.repair/images/same-day-appliance-repair-logo-2.webp",
+    "telephone": "+1-323-870-4790",
+    "priceRange": "$$",
+    "address": {
+      "@type": "PostalAddress",
+      "addressRegion": "CA",
+      "addressCountry": "US"
+    }
+  },
+  "areaServed": [
+    { "@type": "Place", "name": "Los Angeles County" },
+    { "@type": "Place", "name": "Orange County" },
+    { "@type": "Place", "name": "Ventura County" }
+  ],
+  "description": "A complete cost breakdown for air duct cleaning services including cleaning fees, installation rates, and diagnostic costs. Learn how we keep your HVAC system healthy and efficient with transparent pricing and expert service.",
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Air Duct Cleaning Pricing",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": { "@type": "Service", "name": "Air Duct Cleaning" },
+        "priceSpecification": {
+          "@type": "PriceSpecification",
+          "minPrice": 200,
+          "maxPrice": 450,
+          "priceCurrency": "USD"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": { "@type": "Service", "name": "Service Fee (waived with repair)" },
+        "price": "120",
+        "priceCurrency": "USD"
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": { "@type": "Service", "name": "New Air Duct Installation (first duct)" },
+        "price": "450",
+        "priceCurrency": "USD"
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": { "@type": "Service", "name": "Each Additional Duct Installation" },
+        "price": "200",
+        "priceCurrency": "USD"
+      }
+    ]
+  },
+  "knowsAbout": [
+    "Air duct cleaning cost breakdown",
+    "How much does air duct cleaning cost?",
+    "Air duct cleaning near me",
+    "Professional HVAC duct cleaning services",
+    "Benefits of air duct cleaning",
+    "Air duct installation pricing",
+    "How often should you clean air ducts?",
+    "Signs your air ducts need cleaning",
+    "Trained technicians for air quality services",
+    "Health risks of dirty air ducts",
+    "Air duct repair and installation in Los Angeles",
+    "Transparent HVAC service pricing",
+    "HVAC air quality improvement",
+    "Local air duct cleaning company in Southern California",
+    "Same-day air duct inspections and service",
+    "Air duct maintenance cost vs. repair cost"
+  ]
+}
+
 ----
 
     <Layout title="Air Duct Cleaning Cost - Labor & Parts Pricing Guide" description="Click for Air Duct repair cost & helpfull tips! Take control of your air conditioner repair expenses with our expert advice.  Call: (323) 870-4790">
@@ -22,9 +99,7 @@ const structuredData = {}
             alt="Furnace repair cost"
           />
 
-          
         </div>
-
         <div class="col-two">
           
 

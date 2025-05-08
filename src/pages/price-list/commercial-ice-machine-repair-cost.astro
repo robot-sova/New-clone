@@ -4,7 +4,73 @@ import Offers from '../components/Offers.jsx'
 import { Brands } from '../components/brands/Brands.jsx'
 import '../styles/global.css';
 import "../../components/css/style_price.css";
-const structuredData = {}
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "serviceType": "Commercial Ice Machine Repair",
+  "name": "Commercial Ice Machine Repair Cost - Same Day Appliance Repair",
+  "url": "https://samedayappliance.repair/commercial-ice-machine-repair-cost/",
+  "provider": {
+    "@type": "LocalBusiness",
+    "name": "Same Day Appliance Repair",
+    "image": "https://samedayappliance.repair/images/same-day-appliance-repair-logo-2.webp",
+    "telephone": "+1-323-870-4790",
+    "priceRange": "$$",
+    "address": {
+      "@type": "PostalAddress",
+      "addressRegion": "CA",
+      "addressCountry": "US"
+    }
+  },
+  "description": "Transparent commercial ice machine repair pricing, including maintenance costs, parts pricing, labor estimates, and brand-specific repair expectations.",
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Commercial Ice Machine Repair Pricing",
+    "itemListElement": [
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Service Fee (waived if repair proceeds)"}, "price": "80", "priceCurrency": "USD"},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Annual Maintenance - Single Unit"}, "price": "125", "priceCurrency": "USD"},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Annual Maintenance - Multiple Units (per unit)"}, "price": "80", "priceCurrency": "USD"},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Clogged Water Filter"}, "priceSpecification": {"@type": "PriceSpecification", "minPrice": 50, "maxPrice": 100, "priceCurrency": "USD"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Faulty Water Inlet Valve"}, "priceSpecification": {"@type": "PriceSpecification", "minPrice": 100, "maxPrice": 150, "priceCurrency": "USD"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Malfunctioning Evaporator"}, "priceSpecification": {"@type": "PriceSpecification", "minPrice": 150, "maxPrice": 200, "priceCurrency": "USD"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Broken Thermostat"}, "priceSpecification": {"@type": "PriceSpecification", "minPrice": 100, "maxPrice": 150, "priceCurrency": "USD"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Faulty Control Board"}, "priceSpecification": {"@type": "PriceSpecification", "minPrice": 150, "maxPrice": 250, "priceCurrency": "USD"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Compressor Issues"}, "priceSpecification": {"@type": "PriceSpecification", "minPrice": 200, "maxPrice": 400, "priceCurrency": "USD"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Scale Build-Up"}, "priceSpecification": {"@type": "PriceSpecification", "minPrice": 80, "maxPrice": 120, "priceCurrency": "USD"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Condenser Needs Cleaning"}, "priceSpecification": {"@type": "PriceSpecification", "minPrice": 70, "maxPrice": 120, "priceCurrency": "USD"}}
+    ]
+  },
+  "brand": [
+    {"@type": "Brand", "name": "Scotsman"},
+    {"@type": "Brand", "name": "Hoshizaki"},
+    {"@type": "Brand", "name": "Manitowoc"},
+    {"@type": "Brand", "name": "Ice-O-Matic"},
+    {"@type": "Brand", "name": "Follett"},
+    {"@type": "Brand", "name": "Kold-Draft"},
+    {"@type": "Brand", "name": "U-Line"},
+    {"@type": "Brand", "name": "Maxx Ice"},
+    {"@type": "Brand", "name": "Bluestone"},
+    {"@type": "Brand", "name": "Cornelius"},
+    {"@type": "Brand", "name": "Whynter"},
+    {"@type": "Brand", "name": "Sub-Zero"},
+    {"@type": "Brand", "name": "Frigidaire"},
+    {"@type": "Brand", "name": "GE Appliances"},
+    {"@type": "Brand", "name": "Viking"},
+    {"@type": "Brand", "name": "True Refrigeration"}
+  ],
+  "knowsAbout": [
+    "Commercial ice machine repair costs",
+    "Ice machine filter and valve issues",
+    "Ice evaporator and compressor repair",
+    "Annual ice machine maintenance",
+    "Condenser cleaning and descaling",
+    "Same-day commercial appliance repair",
+    "Faulty ice machine control board",
+    "Commercial kitchen equipment repair",
+    "Certified ice machine repair technicians",
+    "Energy-efficient ice machine servicing"
+  ]
+}
 ----
     <Layout title="Commercial Ice Machine Repair Cost - Full Pricing Guide" description="Click for commercial ice machine repair cost & helpfull tips! Take control of your air conditioner repair expenses with our expert advice.  Call: (323) 870-4790">
 <div id="maincontent">

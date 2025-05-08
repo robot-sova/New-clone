@@ -4,7 +4,133 @@ import Offers from '../components/Offers.jsx'
 import { Brands } from '../components/brands/Brands.jsx'
 import '../styles/global.css';
 import "../../components/css/style_price.css";
-const structuredData = {}
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "@id": "https://samedayappliance.repair/price-list/bbq-grill-repair-cost/",
+  "name": "BBQ Grill Repair Cost Guide",
+  "serviceType": "BBQ Grill Repair Service",
+  "provider": {
+    "@type": "LocalBusiness",
+    "name": "Same Day Appliance Repair",
+    "image": "https://samedayappliance.repair/images/same-day-appliance-repair-logo-2.webp",
+    "telephone": "+1-323-870-4790",
+    "areaServed": [
+      {
+        "@type": "Place",
+        "name": "Los Angeles County",
+        "url": "https://en.wikipedia.org/wiki/Los_Angeles_County,_California"
+      },
+      {
+        "@type": "Place",
+        "name": "Orange County",
+        "url": "https://en.wikipedia.org/wiki/Orange_County,_California"
+      },
+      {
+        "@type": "Place",
+        "name": "Ventura County",
+        "url": "https://en.wikipedia.org/wiki/Ventura_County,_California"
+      }
+    ],
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Los Angeles",
+      "addressRegion": "CA",
+      "postalCode": "90025",
+      "addressCountry": "US"
+    },
+    "url": "https://samedayappliance.repair"
+  },
+  "offers": {
+    "@type": "OfferCatalog",
+    "name": "BBQ Grill Repair Pricing",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Ignition System Replacement"
+        },
+        "priceCurrency": "USD",
+        "price": "85-150"
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Burners Replacement"
+        },
+        "priceCurrency": "USD",
+        "price": "100-200"
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Grill Grates Replacement"
+        },
+        "priceCurrency": "USD",
+        "price": "85-200"
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Annual BBQ Grill Maintenance"
+        },
+        "priceCurrency": "USD",
+        "price": "80"
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "BBQ Cleaning and Full Service (Small to Extra-Large Grills)"
+        },
+        "priceCurrency": "USD",
+        "price": "130-450"
+      }
+    ]
+  },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Supported BBQ Grill Brands",
+    "itemListElement": [
+      { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Weber" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Traeger" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Char-Broil" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Nexgrill" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Big Green Egg" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Kamado Joe" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Napoleon" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Dyna-Glo" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Broil King" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Pit Boss" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Blackstone" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Cuisinart" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Z Grills" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Ooni" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Coleman" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Masterbuilt" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "George Foreman" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Royal Gourmet" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Kenmore" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Lynx" } }
+    ]
+  },
+  "knowsAbout": [
+    "BBQ grill maintenance",
+    "grill repair pricing",
+    "grill ignitor issues",
+    "grill cleaning service",
+    "burner replacement",
+    "BBQ part replacement cost",
+    "gas valve repair",
+    "ceramic briquettes replacement",
+    "grill grates replacement",
+    "barbecue appliance maintenance"
+  ]
+}
 ----
     <Layout title="BBQ Grill Cleaning Cost - Labor & Parts Pricing Guide" description="Click for BBQ grill repair cost & helpfull tips! Take control of your air conditioner repair expenses with our expert advice.  Call: (323) 870-4790">
 <div id="maincontent">

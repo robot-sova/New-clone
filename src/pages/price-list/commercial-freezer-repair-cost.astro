@@ -4,7 +4,84 @@ import Offers from '../components/Offers.jsx'
 import { Brands } from '../components/brands/Brands.jsx'
 import '../styles/global.css';
 import "../../components/css/style_price.css";
-const structuredData = {}
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "serviceType": "Commercial Freezer Repair",
+  "name": "Commercial Freezer Repair Cost - Same Day Appliance Repair",
+  "url": "https://samedayappliance.repair/commercial-freezer-repair-cost/",
+  "provider": {
+    "@type": "LocalBusiness",
+    "name": "Same Day Appliance Repair",
+    "image": "https://samedayappliance.repair/images/same-day-appliance-repair-logo-2.webp",
+    "telephone": "+1-323-870-4790",
+    "priceRange": "$$",
+    "address": {
+      "@type": "PostalAddress",
+      "addressRegion": "CA",
+      "addressCountry": "US"
+    }
+  },
+  "description": "Full commercial freezer repair pricing including service fees, parts costs, labor ranges, and brand-specific details. Transparent estimates from certified technicians at Same Day Appliance Repair.",
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Commercial Freezer Repair Pricing",
+    "itemListElement": [
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Service Fee (waived if repair proceeds)"}, "price": "80", "priceCurrency": "USD"},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Annual Maintenance - Single Unit"}, "price": "125", "priceCurrency": "USD"},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Annual Maintenance - Multiple Units (per unit)"}, "price": "80", "priceCurrency": "USD"},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Walk-In Freezer Maintenance"}, "price": "250", "priceCurrency": "USD"},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Compressor Replacement"}, "priceSpecification": {"@type": "PriceSpecification", "minPrice": 250, "maxPrice": 600, "priceCurrency": "USD"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Refrigerant Leak Repair"}, "priceSpecification": {"@type": "PriceSpecification", "minPrice": 150, "maxPrice": 400, "priceCurrency": "USD"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Thermostat Replacement"}, "priceSpecification": {"@type": "PriceSpecification", "minPrice": 100, "maxPrice": 300, "priceCurrency": "USD"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Evaporator Fan Motor Replacement"}, "priceSpecification": {"@type": "PriceSpecification", "minPrice": 120, "maxPrice": 350, "priceCurrency": "USD"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Condenser Fan Motor Replacement"}, "priceSpecification": {"@type": "PriceSpecification", "minPrice": 120, "maxPrice": 350, "priceCurrency": "USD"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Door Seal (Gasket) Replacement"}, "priceSpecification": {"@type": "PriceSpecification", "minPrice": 80, "maxPrice": 150, "priceCurrency": "USD"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Defrost Heater Replacement"}, "priceSpecification": {"@type": "PriceSpecification", "minPrice": 100, "maxPrice": 300, "priceCurrency": "USD"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Control Board Replacement"}, "priceSpecification": {"@type": "PriceSpecification", "minPrice": 150, "maxPrice": 400, "priceCurrency": "USD"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Start Relay Replacement"}, "priceSpecification": {"@type": "PriceSpecification", "minPrice": 80, "maxPrice": 200, "priceCurrency": "USD"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Drain Line Clearing"}, "priceSpecification": {"@type": "PriceSpecification", "minPrice": 80, "maxPrice": 200, "priceCurrency": "USD"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Interior Lighting Fixtures Replacement"}, "priceSpecification": {"@type": "PriceSpecification", "minPrice": 80, "maxPrice": 150, "priceCurrency": "USD"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Icemaker Repair"}, "priceSpecification": {"@type": "PriceSpecification", "minPrice": 100, "maxPrice": 300, "priceCurrency": "USD"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Unusual Noises Repair"}, "priceSpecification": {"@type": "PriceSpecification", "minPrice": 80, "maxPrice": 300, "priceCurrency": "USD"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Display Panel Repair"}, "priceSpecification": {"@type": "PriceSpecification", "minPrice": 100, "maxPrice": 350, "priceCurrency": "USD"}}
+    ]
+  },
+  "brand": [
+    {"@type": "Brand", "name": "Maytag"},
+    {"@type": "Brand", "name": "Whirlpool"},
+    {"@type": "Brand", "name": "Electrolux"},
+    {"@type": "Brand", "name": "LG Electronics"},
+    {"@type": "Brand", "name": "Samsung"},
+    {"@type": "Brand", "name": "Huebsch"},
+    {"@type": "Brand", "name": "Dexter"},
+    {"@type": "Brand", "name": "Milnor"},
+    {"@type": "Brand", "name": "Continental Girbau"},
+    {"@type": "Brand", "name": "UniMac"},
+    {"@type": "Brand", "name": "Wascomat"},
+    {"@type": "Brand", "name": "American Dryer Corporation"},
+    {"@type": "Brand", "name": "IPSO"},
+    {"@type": "Brand", "name": "Primus"},
+    {"@type": "Brand", "name": "Miele"},
+    {"@type": "Brand", "name": "Fagor"},
+    {"@type": "Brand", "name": "Alliance Laundry Systems"},
+    {"@type": "Brand", "name": "Girbau North America"},
+    {"@type": "Brand", "name": "Pellerin Milnor Corporation"}
+  ],
+  "knowsAbout": [
+    "Commercial freezer repair pricing",
+    "Freezer compressor replacement cost",
+    "Annual and walk-in freezer maintenance",
+    "Freezer not cooling troubleshooting",
+    "Condenser and evaporator repairs",
+    "Commercial appliance service Los Angeles",
+    "Display panel and control board issues",
+    "Same-day freezer repair availability",
+    "Freezer ice buildup and defrost problems",
+    "Transparent and affordable commercial freezer repair"
+  ]
+}
+
 ----
     <Layout title="Commercial Freezer Repair Cost - Full Pricing Guide" description="Click for commercial freezer repair cost & helpfull tips! Take control of your air conditioner repair expenses with our expert advice.  Call: (323) 870-4790">
 <div id="maincontent">

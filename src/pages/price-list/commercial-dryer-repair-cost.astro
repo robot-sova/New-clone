@@ -4,7 +4,79 @@ import Offers from '../components/Offers.jsx'
 import { Brands } from '../components/brands/Brands.jsx'
 import '../styles/global.css';
 import "../../components/css/style_price.css";
-const structuredData = {}
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "serviceType": "Commercial Dryer Repair",
+  "name": "Commercial Dryer Repair Cost - Same Day Appliance Repair",
+  "url": "https://samedayappliance.repair/commercial-dryer-repair-cost/",
+  "provider": {
+    "@type": "LocalBusiness",
+    "name": "Same Day Appliance Repair",
+    "image": "https://samedayappliance.repair/images/same-day-appliance-repair-logo-2.webp",
+    "telephone": "+1-323-870-4790",
+    "priceRange": "$$",
+    "address": {
+      "@type": "PostalAddress",
+      "addressRegion": "CA",
+      "addressCountry": "US"
+    }
+  },
+  "description": "Detailed commercial dryer repair pricing, including labor, parts, common repair scenarios, and brand-specific cost ranges. Same Day Appliance Repair offers fair pricing and expert technicians.",
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Commercial Dryer Repair Pricing",
+    "itemListElement": [
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Service Fee (waived if repair proceeds)"}, "price": "80", "priceCurrency": "USD"},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Annual Maintenance - Single Unit"}, "price": "125", "priceCurrency": "USD"},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Annual Maintenance - Multiple Units (per unit)"}, "price": "80", "priceCurrency": "USD"},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Heating Element Failure"}, "priceSpecification": {"@type": "PriceSpecification", "minPrice": 100, "maxPrice": 250, "priceCurrency": "USD"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Faulty Thermostat"}, "priceSpecification": {"@type": "PriceSpecification", "minPrice": 100, "maxPrice": 200, "priceCurrency": "USD"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Malfunctioning Timers"}, "priceSpecification": {"@type": "PriceSpecification", "minPrice": 100, "maxPrice": 250, "priceCurrency": "USD"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Motor Issues"}, "priceSpecification": {"@type": "PriceSpecification", "minPrice": 150, "maxPrice": 300, "priceCurrency": "USD"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Belt Replacement"}, "priceSpecification": {"@type": "PriceSpecification", "minPrice": 100, "maxPrice": 200, "priceCurrency": "USD"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Faulty Igniter (Gas Dryers)"}, "priceSpecification": {"@type": "PriceSpecification", "minPrice": 100, "maxPrice": 250, "priceCurrency": "USD"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Thermal Fuse"}, "priceSpecification": {"@type": "PriceSpecification", "minPrice": 100, "maxPrice": 200, "priceCurrency": "USD"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Gas Valve Coils (Gas Dryers)"}, "priceSpecification": {"@type": "PriceSpecification", "minPrice": 100, "maxPrice": 250, "priceCurrency": "USD"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Air Flow Problems"}, "priceSpecification": {"@type": "PriceSpecification", "minPrice": 100, "maxPrice": 200, "priceCurrency": "USD"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Control Board Issues"}, "priceSpecification": {"@type": "PriceSpecification", "minPrice": 150, "maxPrice": 400, "priceCurrency": "USD"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Door Switch"}, "priceSpecification": {"@type": "PriceSpecification", "minPrice": 100, "maxPrice": 200, "priceCurrency": "USD"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Drum Rollers"}, "priceSpecification": {"@type": "PriceSpecification", "minPrice": 100, "maxPrice": 250, "priceCurrency": "USD"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Drum Bearings"}, "priceSpecification": {"@type": "PriceSpecification", "minPrice": 100, "maxPrice": 300, "priceCurrency": "USD"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Idler Pulley"}, "priceSpecification": {"@type": "PriceSpecification", "minPrice": 100, "maxPrice": 200, "priceCurrency": "USD"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Exhaust Vent Cleaning"}, "priceSpecification": {"@type": "PriceSpecification", "minPrice": 100, "maxPrice": 200, "priceCurrency": "USD"}}
+    ]
+  },
+  "brand": [
+    {"@type": "Brand", "name": "Speed Queen"},
+    {"@type": "Brand", "name": "Maytag"},
+    {"@type": "Brand", "name": "Whirlpool"},
+    {"@type": "Brand", "name": "General Electric"},
+    {"@type": "Brand", "name": "UniMac"},
+    {"@type": "Brand", "name": "Electrolux"},
+    {"@type": "Brand", "name": "Wascomat"},
+    {"@type": "Brand", "name": "Huebsch"},
+    {"@type": "Brand", "name": "Dexter"},
+    {"@type": "Brand", "name": "LG"},
+    {"@type": "Brand", "name": "Continental"},
+    {"@type": "Brand", "name": "Milnor"},
+    {"@type": "Brand", "name": "Primus"},
+    {"@type": "Brand", "name": "American Dryer Corporation"},
+    {"@type": "Brand", "name": "Miele"}
+  ],
+  "knowsAbout": [
+    "Commercial dryer repair costs",
+    "Labor and parts breakdown",
+    "Dryer heating issues",
+    "Commercial dryer maintenance service",
+    "Same-day commercial appliance repair",
+    "Exhaust vent cleaning",
+    "Motor and drum repair for dryers",
+    "Trusted dryer repair in Los Angeles",
+    "Transparent repair pricing",
+    "Gas and electric commercial dryer service"
+  ]
+}
 ----
     <Layout title="Commercial Dryer Repair Cost - Full Pricing Guide" description="Click for commercial dryer repair cost & helpfull tips! Take control of your air conditioner repair expenses with our expert advice.  Call: (323) 870-4790">
 <div id="maincontent">

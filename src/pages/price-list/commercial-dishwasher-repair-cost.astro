@@ -4,7 +4,367 @@ import Offers from '../components/Offers.jsx'
 import { Brands } from '../components/brands/Brands.jsx'
 import '../styles/global.css';
 import "../../components/css/style_price.css";
-const structuredData = {}
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "@id": "https://samedayappliance.repair/commercial-dishwasher-repair-cost/",
+  "serviceType": "Commercial Dishwasher Repair",
+  "provider": {
+    "@type": "LocalBusiness",
+    "name": "Same Day Appliance Repair",
+    "image": "https://samedayappliance.repair/images/same-day-appliance-repair-logo-2.webp",
+    "url": "https://samedayappliance.repair",
+    "telephone": "+1-323-870-4790",
+    "priceRange": "$$",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Los Angeles",
+      "addressRegion": "CA",
+      "addressCountry": "US"
+    }
+  },
+  "areaServed": {
+    "@type": "Place",
+    "name": "Los Angeles Metropolitan Area",
+    "geo": {
+      "@type": "GeoCircle",
+      "geoMidpoint": {
+        "@type": "GeoCoordinates",
+        "latitude": 34.0522,
+        "longitude": -118.2437
+      },
+      "geoRadius": 50
+    }
+  },
+  "offers": {
+    "@type": "AggregateOffer",
+    "name": "Commercial Dishwasher Repair Cost Breakdown",
+    "lowPrice": 80,
+    "highPrice": 1200,
+    "priceCurrency": "USD",
+    "offerCount": 20,
+    "offers": [
+      {
+        "@type": "Offer",
+        "name": "Spray Arms Not Rotating – Labor",
+        "price": "80-200",
+        "priceCurrency": "USD"
+      },
+      {
+        "@type": "Offer",
+        "name": "Heating Element Issues – Labor",
+        "price": "100-300",
+        "priceCurrency": "USD"
+      },
+      {
+        "@type": "Offer",
+        "name": "Thermostat Issues – Labor",
+        "price": "100-250",
+        "priceCurrency": "USD"
+      },
+      {
+        "@type": "Offer",
+        "name": "Pump and Motor Assembly – Labor",
+        "price": "150-400",
+        "priceCurrency": "USD"
+      },
+      {
+        "@type": "Offer",
+        "name": "Drain Valve – Labor",
+        "price": "100-300",
+        "priceCurrency": "USD"
+      },
+      {
+        "@type": "Offer",
+        "name": "Door Seal or Latch – Labor",
+        "price": "80-200",
+        "priceCurrency": "USD"
+      },
+      {
+        "@type": "Offer",
+        "name": "Control Module – Labor",
+        "price": "150-400",
+        "priceCurrency": "USD"
+      },
+      {
+        "@type": "Offer",
+        "name": "Solenoid Valve – Labor",
+        "price": "100-250",
+        "priceCurrency": "USD"
+      },
+      {
+        "@type": "Offer",
+        "name": "Spray Jets – Labor",
+        "price": "80-150",
+        "priceCurrency": "USD"
+      },
+      {
+        "@type": "Offer",
+        "name": "Filters – Labor",
+        "price": "80-150",
+        "priceCurrency": "USD"
+      },
+      {
+        "@type": "Offer",
+        "name": "Wash/Rinse Arms – Parts",
+        "price": "50-250",
+        "priceCurrency": "USD"
+      },
+      {
+        "@type": "Offer",
+        "name": "Heating Element – Parts",
+        "price": "150-400",
+        "priceCurrency": "USD"
+      },
+      {
+        "@type": "Offer",
+        "name": "Thermostat – Parts",
+        "price": "50-150",
+        "priceCurrency": "USD"
+      },
+      {
+        "@type": "Offer",
+        "name": "Pump and Motor – Parts",
+        "price": "200-600",
+        "priceCurrency": "USD"
+      },
+      {
+        "@type": "Offer",
+        "name": "Drain Valve – Parts",
+        "price": "100-300",
+        "priceCurrency": "USD"
+      },
+      {
+        "@type": "Offer",
+        "name": "Control Module – Parts",
+        "price": "250-700",
+        "priceCurrency": "USD"
+      },
+      {
+        "@type": "Offer",
+        "name": "Solenoid Valve – Parts",
+        "price": "75-200",
+        "priceCurrency": "USD"
+      },
+      {
+        "@type": "Offer",
+        "name": "Temperature Sensors – Parts",
+        "price": "50-150",
+        "priceCurrency": "USD"
+      },
+      {
+        "@type": "Offer",
+        "name": "Detergent Dispenser – Parts",
+        "price": "100-250",
+        "priceCurrency": "USD"
+      },
+      {
+        "@type": "Offer",
+        "name": "Door Seals – Parts",
+        "price": "25-150",
+        "priceCurrency": "USD"
+      },
+  {
+    "@type": "Offer",
+    "name": "Hobart Commercial Dishwasher Repair",
+    "price": "200-1000",
+    "priceCurrency": "USD",
+    "description": "Repair cost for Hobart commercial dishwashers, depending on issue complexity and parts needed."
+  },
+  {
+    "@type": "Offer",
+    "name": "Miele Commercial Dishwasher Repair",
+    "price": "250-800",
+    "priceCurrency": "USD",
+    "description": "Estimated repair cost range for Miele commercial dishwashers, including labor and parts."
+  },
+  {
+    "@type": "Offer",
+    "name": "Jackson Commercial Dishwasher Repair",
+    "price": "150-600",
+    "priceCurrency": "USD",
+    "description": "Common Jackson dishwasher repairs including spray arm and pump issues."
+  },
+  {
+    "@type": "Offer",
+    "name": "Electrolux Commercial Dishwasher Repair",
+    "price": "200-700",
+    "priceCurrency": "USD",
+    "description": "Electrolux dishwasher repairs may involve advanced electronic parts and certified technician service."
+  },
+  {
+    "@type": "Offer",
+    "name": "Champion Commercial Dishwasher Repair",
+    "price": "150-890",
+    "priceCurrency": "USD",
+    "description": "Champion dishwasher repairs, including motor and seal replacements, range up to $890."
+  },
+  {
+    "@type": "Offer",
+    "name": "CMA Commercial Dishwasher Repair",
+    "price": "100-500",
+    "priceCurrency": "USD",
+    "description": "Budget-friendly CMA dishwasher repairs including seals, hoses, and pump replacements."
+  },
+   {
+    "@type": "Offer",
+    "name": "Hobart Commercial Dishwasher Repair",
+    "price": "200-1000",
+    "priceCurrency": "USD",
+    "description": "Expert repair services for Hobart commercial dishwashers, known for robust construction and premium parts."
+  },
+  {
+    "@type": "Offer",
+    "name": "Jackson Commercial Dishwasher Repair",
+    "price": "150-600",
+    "priceCurrency": "USD",
+    "description": "Cost-effective repairs for Jackson dishwashers including spray arms, motors, and seals."
+  },
+  {
+    "@type": "Offer",
+    "name": "Miele Commercial Dishwasher Repair",
+    "price": "250-800",
+    "priceCurrency": "USD",
+    "description": "Precision repair services for Miele dishwashers with advanced German engineering."
+  },
+  {
+    "@type": "Offer",
+    "name": "CMA Dishmachines Repair",
+    "price": "100-500",
+    "priceCurrency": "USD",
+    "description": "Affordable repair solutions for CMA Dishmachines, focusing on mechanical efficiency and uptime."
+  },
+  {
+    "@type": "Offer",
+    "name": "Winterhalter Commercial Dishwasher Repair",
+    "price": "250-900",
+    "priceCurrency": "USD",
+    "description": "Professional repair for Winterhalter dishwashers, known for European precision and high-efficiency systems."
+  },
+  {
+    "@type": "Offer",
+    "name": "Meiko Commercial Dishwasher Repair",
+    "price": "200-850",
+    "priceCurrency": "USD",
+    "description": "Service for Meiko commercial units including diagnostics, parts replacement, and system tuning."
+  },
+  {
+    "@type": "Offer",
+    "name": "Champion Commercial Dishwasher Repair",
+    "price": "150-890",
+    "priceCurrency": "USD",
+    "description": "Reliable service for Champion units including gaskets, control boards, and pump repairs."
+  },
+  {
+    "@type": "Offer",
+    "name": "Electrolux Professional Dishwasher Repair",
+    "price": "200-700",
+    "priceCurrency": "USD",
+    "description": "Repairs for Electrolux Professional dishwashers including thermostats, motors, and sensors."
+  },
+  {
+    "@type": "Offer",
+    "name": "Fagor Commercial Dishwasher Repair",
+    "price": "150-650",
+    "priceCurrency": "USD",
+    "description": "Repairs for Fagor units featuring efficient service for European-built dishwashers."
+  },
+  {
+    "@type": "Offer",
+    "name": "Blakeslee Commercial Dishwasher Repair",
+    "price": "150-600",
+    "priceCurrency": "USD",
+    "description": "Cost-effective repair services for Blakeslee commercial dishwashers with robust parts availability."
+  },
+  {
+    "@type": "Offer",
+    "name": "Washtech Commercial Dishwasher Repair",
+    "price": "150-700",
+    "priceCurrency": "USD",
+    "description": "Trusted service for Washtech commercial dishwashers including diagnostics and fast part replacement."
+  },
+  {
+    "@type": "Offer",
+    "name": "Comenda Commercial Dishwasher Repair",
+    "price": "150-750",
+    "priceCurrency": "USD",
+    "description": "Repair services for Comenda systems, including pumps, heating elements, and control modules."
+  },
+  {
+    "@type": "Offer",
+    "name": "Classeq Commercial Dishwasher Repair",
+    "price": "150-600",
+    "priceCurrency": "USD",
+    "description": "Efficient repairs for Classeq dishwashers—ideal for UK-based installations and eco-friendly kitchens."
+  },
+  {
+    "@type": "Offer",
+    "name": "JLA Commercial Dishwasher Repair",
+    "price": "150-700",
+    "priceCurrency": "USD",
+    "description": "JLA dishwasher repair services including part replacements and maintenance for commercial kitchens."
+  },
+  {
+    "@type": "Offer",
+    "name": "Sterling-Pro Commercial Dishwasher Repair",
+    "price": "150-650",
+    "priceCurrency": "USD",
+    "description": "Support for Sterling-Pro dishwashers including door seals, sensors, and drain components."
+  },
+  {
+    "@type": "Offer",
+    "name": "SMEG Commercial Dishwasher Repair",
+    "price": "150-750",
+    "priceCurrency": "USD",
+    "description": "Factory-trained repair for SMEG dishwashers with stylish design and unique part configurations."
+  },
+  {
+    "@type": "Offer",
+    "name": "Beko Commercial Dishwasher Repair",
+    "price": "100-550",
+    "priceCurrency": "USD",
+    "description": "Fast and affordable repair for Beko commercial dishwashers across various service models."
+  },
+  {
+    "@type": "Offer",
+    "name": "Scotsman Commercial Dishwasher Repair",
+    "price": "200-800",
+    "priceCurrency": "USD",
+    "description": "Service for Scotsman dishwashing systems and undercounter units commonly used in hospitality."
+  },
+  {
+    "@type": "Offer",
+    "name": "Wexiodisk Commercial Dishwasher Repair",
+    "price": "250-900",
+    "priceCurrency": "USD",
+    "description": "Specialist service for Wexiodisk eco-efficient commercial dishwashers including Swedish-built models."
+  },
+  {
+    "@type": "Offer",
+    "name": "Adler Commercial Dishwasher Repair",
+    "price": "150-600",
+    "priceCurrency": "USD",
+    "description": "Repair services for Adler commercial dishwashers including thermostats, valves, and motor issues."
+  }
+
+    ]
+  },
+  "knowsAbout": [
+    "Commercial dishwasher repair cost",
+    "Spray arm replacement",
+    "Heating element issues",
+    "Drain valve replacement",
+    "Pump and motor repair",
+    "Control module diagnostics",
+    "Solenoid valve problems",
+    "Thermostat failure",
+    "Rinse aid dispenser repair",
+    "Labor costs for dishwasher repair",
+    "Replacement parts for commercial dishwashers",
+    "Preventative dishwasher maintenance"
+  ],
+}
+
     <Layout title="Commercial Dishwasher Repair Cost - Full Pricing Guide" description="Click for commercial dishwasher repair cost & helpfull tips! Take control of your air conditioner repair expenses with our expert advice.  Call: (323) 870-4790">
 <div id="maincontent">
       <h1>
