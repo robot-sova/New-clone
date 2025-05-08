@@ -1,0 +1,50 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Offers from '../components/Offers.jsx'
+import { Brands } from '../components/brands/Brands.jsx'
+import '../styles/global.css';
+import "../../components/css/style_price.css";
+----
+<Layout title="Comprehensive Appliance Repair Cost Guide - All Brands" description="Navigate appliance repair costs with our comprehensive guide. Understand pricing factors, compare repair vs. replacement costs. Call: (323) 870-4790">
+<div id="maincontent">
+      <h1>
+        <span class="animate-charcter">Appliance Repair Cost</span> Online estimates
+      </h1>
+
+      <div class="two-col-grid">
+        <div class="col-one">
+          <img
+            class="img-header"
+            src="/images/lg-dryer-repair.webp"
+            width="500"
+            height="500"
+            alt="Appliance Repair Cost"
+          />
+
+          
+        </div>
+
+        <div class="col-two">
+          <p>
+            Welcome to our comprehansive appliance repair cost page. We are
+            currently developping an online content for our indepth appliance
+            repair cost guid. We understand that the appliance repair cost is
+            one of the main concerns and we want to help you make your decision
+            easier.
+          </p>
+        </div>
+      </div>
+      <p>
+        <a href="/price-list/dryer-repair-cost/" title="Dryer Repair Cost"
+          ><b>Dryer Repair Cost</b></a
+        >
+      </p>
+      <p>
+        <a href="/price-list/lg-dryer-repair-cost" title="Lg Dryer Repair Cost"
+          >Lg Dryer Repair Cost</a
+        >
+      </p>
+</div>
+ <Tabs client:load/>
+ <Brands client:load/>
+</Layout>
