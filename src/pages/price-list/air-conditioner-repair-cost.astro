@@ -4,7 +4,145 @@ import Offers from '../components/Offers.jsx'
 import { Brands } from '../components/brands/Brands.jsx'
 import '../styles/global.css';
 import "../../components/css/style_price.css";
-const structuredData = {}
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "serviceType": "Stove Repair",
+  "name": "Stove Repair Cost - Same Day Appliance Repair",
+  "url": "https://samedayappliance.repair/stove-repair-cost/",
+  "provider": {
+    "@type": "LocalBusiness",
+    "name": "Same Day Appliance Repair",
+    "image": "https://samedayappliance.repair/images/same-day-appliance-repair-logo-2.webp",
+    "telephone": "+1-323-870-4790",
+    "priceRange": "$$",
+    "address": {
+      "@type": "PostalAddress",
+      "addressRegion": "CA",
+      "addressCountry": "US"
+    }
+  },
+ "areaServed": [
+    { "@type": "City", "name": "Alhambra", "sameAs": "https://en.wikipedia.org/wiki/Alhambra,_California" },
+    { "@type": "City", "name": "Bel Air", "sameAs": "https://en.wikipedia.org/wiki/Bel_Air,_Los_Angeles" },
+    { "@type": "City", "name": "Beverly Hills", "sameAs": "https://en.wikipedia.org/wiki/Beverly_Hills,_California" },
+    { "@type": "City", "name": "Brentwood", "sameAs": "https://en.wikipedia.org/wiki/Brentwood,_Los_Angeles" },
+    { "@type": "City", "name": "Sherman Oaks", "sameAs": "https://en.wikipedia.org/wiki/Sherman_Oaks,_Los_Angeles" }
+
+    { "@type": "City", "name": "Burbank", "sameAs": "https://en.wikipedia.org/wiki/Burbank,_California" },
+    { "@type": "City", "name": "Culver City", "sameAs": "https://en.wikipedia.org/wiki/Culver_City,_California" },
+    { "@type": "City", "name": "Downtown Los Angeles", "sameAs": "https://en.wikipedia.org/wiki/Downtown_Los_Angeles" },
+    { "@type": "City", "name": "East Hollywood", "sameAs": "https://en.wikipedia.org/wiki/East_Hollywood,_Los_Angeles" },
+    { "@type": "City", "name": "Glendale", "sameAs": "https://en.wikipedia.org/wiki/Glendale,_California" },
+    { "@type": "City", "name": "Glassell Park", "sameAs": "https://en.wikipedia.org/wiki/Glassell_Park,_Los_Angeles" },
+    { "@type": "City", "name": "Hollywood", "sameAs": "https://en.wikipedia.org/wiki/Hollywood,_Los_Angeles" },
+    { "@type": "City", "name": "Hollywood Hills", "sameAs": "https://en.wikipedia.org/wiki/Hollywood_Hills" },
+    { "@type": "City", "name": "Ladera Heights", "sameAs": "https://en.wikipedia.org/wiki/Ladera_Heights,_California" },
+    { "@type": "City", "name": "Los Angeles", "sameAs": "https://en.wikipedia.org/wiki/Los_Angeles" },
+    { "@type": "City", "name": "Los Feliz", "sameAs": "https://en.wikipedia.org/wiki/Los_Feliz,_Los_Angeles" },
+    { "@type": "City", "name": "Malibu", "sameAs": "https://en.wikipedia.org/wiki/Malibu,_California" },
+    { "@type": "City", "name": "Marina Del Rey", "sameAs": "https://en.wikipedia.org/wiki/Marina_del_Rey,_California" },
+    { "@type": "City", "name": "Monterey Park", "sameAs": "https://en.wikipedia.org/wiki/Monterey_Park,_California" },
+    { "@type": "City", "name": "North Hollywood", "sameAs": "https://en.wikipedia.org/wiki/North_Hollywood,_Los_Angeles" },
+    { "@type": "City", "name": "Pacific Palisades", "sameAs": "https://en.wikipedia.org/wiki/Pacific_Palisades,_Los_Angeles" },
+    { "@type": "City", "name": "Pasadena", "sameAs": "https://en.wikipedia.org/wiki/Pasadena,_California" },
+    { "@type": "City", "name": "Playa Del Rey", "sameAs": "https://en.wikipedia.org/wiki/Playa_del_Rey,_Los_Angeles" },
+    { "@type": "City", "name": "San Marino", "sameAs": "https://en.wikipedia.org/wiki/San_Marino,_California" },
+    { "@type": "City", "name": "Santa Monica", "sameAs": "https://en.wikipedia.org/wiki/Santa_Monica,_California" },
+    { "@type": "City", "name": "Silver Lake", "sameAs": "https://en.wikipedia.org/wiki/Silver_Lake,_Los_Angeles" },
+    { "@type": "City", "name": "South Pasadena", "sameAs": "https://en.wikipedia.org/wiki/South_Pasadena,_California" },
+    { "@type": "City", "name": "Universal City", "sameAs": "https://en.wikipedia.org/wiki/Universal_City,_California" },
+    { "@type": "City", "name": "West Hollywood", "sameAs": "https://en.wikipedia.org/wiki/West_Hollywood,_California" },
+    { "@type": "City", "name": "Thousand Oaks", "sameAs": "https://en.wikipedia.org/wiki/Thousand_Oaks,_California" }
+  ],
+  "description": "A complete guide to stove repair pricing including labor costs, parts replacement, and average costs by brand. Get transparent estimates and expert service from certified technicians.",
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Stove Repair Pricing",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": { "@type": "Service", "name": "Diagnostic Fee" },
+        "price": "89",
+        "priceCurrency": "USD"
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": { "@type": "Service", "name": "Annual Maintenance" },
+        "price": "80",
+        "priceCurrency": "USD"
+      },
+
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Burner Replacement" }, "priceSpecification": { "@type": "PriceSpecification", "minPrice": 100, "maxPrice": 250, "priceCurrency": "USD" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Igniter Replacement (Gas)" }, "priceSpecification": { "@type": "PriceSpecification", "minPrice": 150, "maxPrice": 300, "priceCurrency": "USD" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Thermostat Replacement" }, "priceSpecification": { "@type": "PriceSpecification", "minPrice": 100, "maxPrice": 250, "priceCurrency": "USD" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Heating Element Replacement" }, "priceSpecification": { "@type": "PriceSpecification", "minPrice": 100, "maxPrice": 200, "priceCurrency": "USD" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Control Board Replacement" }, "priceSpecification": { "@type": "PriceSpecification", "minPrice": 250, "maxPrice": 400, "priceCurrency": "USD" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Door Hinge Replacement" }, "priceSpecification": { "@type": "PriceSpecification", "minPrice": 100, "maxPrice": 200, "priceCurrency": "USD" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Gas Valve Replacement" }, "priceSpecification": { "@type": "PriceSpecification", "minPrice": 150, "maxPrice": 350, "priceCurrency": "USD" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Broiler Element Replacement" }, "priceSpecification": { "@type": "PriceSpecification", "minPrice": 100, "maxPrice": 250, "priceCurrency": "USD" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Temperature Sensor Replacement" }, "priceSpecification": { "@type": "PriceSpecification", "minPrice": 100, "maxPrice": 200, "priceCurrency": "USD" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Safety Valve Replacement" }, "priceSpecification": { "@type": "PriceSpecification", "minPrice": 150, "maxPrice": 350, "priceCurrency": "USD" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Spark Module Replacement" }, "priceSpecification": { "@type": "PriceSpecification", "minPrice": 100, "maxPrice": 200, "priceCurrency": "USD" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Timer/Clock Replacement" }, "priceSpecification": { "@type": "PriceSpecification", "minPrice": 100, "maxPrice": 300, "priceCurrency": "USD" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Door Seal Replacement" }, "priceSpecification": { "@type": "PriceSpecification", "minPrice": 85, "maxPrice": 150, "priceCurrency": "USD" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Drip Pans Replacement" }, "priceSpecification": { "@type": "PriceSpecification", "minPrice": 80, "maxPrice": 120, "priceCurrency": "USD" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Wiring & Electrical Repairs" }, "priceSpecification": { "@type": "PriceSpecification", "minPrice": 100, "maxPrice": 400, "priceCurrency": "USD" } },
+
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Fixing Leaking Gas Stove" }, "priceSpecification": { "@type": "PriceSpecification", "minPrice": 200, "maxPrice": 750, "priceCurrency": "USD" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Stove Top Replacement" }, "priceSpecification": { "@type": "PriceSpecification", "minPrice": 200, "maxPrice": 1000, "priceCurrency": "USD" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Radiant Heating Element Replacement" }, "priceSpecification": { "@type": "PriceSpecification", "minPrice": 90, "maxPrice": 175, "priceCurrency": "USD" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Metal-Coil Element Replacement" }, "priceSpecification": { "@type": "PriceSpecification", "minPrice": 120, "maxPrice": 330, "priceCurrency": "USD" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Oven Igniter Replacement (Gas)" }, "priceSpecification": { "@type": "PriceSpecification", "minPrice": 150, "maxPrice": 325, "priceCurrency": "USD" } }
+    ]
+  },
+  "additionalType": "https://schema.org/Product",
+  "brand": [
+    { "@type": "Brand", "name": "Whirlpool" },
+    { "@type": "Brand", "name": "Samsung" },
+    { "@type": "Brand", "name": "GE Appliances" },
+    { "@type": "Brand", "name": "LG Electronics" },
+    { "@type": "Brand", "name": "Maytag" },
+    { "@type": "Brand", "name": "Bosch" },
+    { "@type": "Brand", "name": "Frigidaire" },
+    { "@type": "Brand", "name": "Kenmore" },
+    { "@type": "Brand", "name": "Electrolux" },
+    { "@type": "Brand", "name": "Amana" },
+    { "@type": "Brand", "name": "Hotpoint" },
+    { "@type": "Brand", "name": "KitchenAid" },
+    { "@type": "Brand", "name": "Jenn-Air" },
+    { "@type": "Brand", "name": "Haier" },
+    { "@type": "Brand", "name": "Asko" },
+    { "@type": "Brand", "name": "Miele" },
+    { "@type": "Brand", "name": "Thermador" },
+    { "@type": "Brand", "name": "Sub-Zero" },
+    { "@type": "Brand", "name": "Wolf" },
+    { "@type": "Brand", "name": "Viking" },
+    { "@type": "Brand", "name": "Dacor" },
+    { "@type": "Brand", "name": "Fisher & Paykel" },
+    { "@type": "Brand", "name": "Magic Chef" },
+    { "@type": "Brand", "name": "Speed Queen" },
+    { "@type": "Brand", "name": "Roper" }
+  ], "knowsAbout": [
+  "Same-day stove repair services",
+  "Certified appliance repair technicians",
+  "Electric stove repair",
+  "Gas stove repair",
+  "Control board replacement for stoves",
+  "Stove heating element replacement",
+  "Oven and stove pricing",
+  "Local appliance repair in Los Angeles",  "Local appliance repair in Ventura County",  "Local appliance repair in Orange County",
+  "Affordable stove repair near me",
+  "Appliance repair labor and parts pricing",
+  "Flat-rate appliance maintenance service",
+  "Trusted stove repair company in Los Angeles",
+  "How much does stove repair cost?",
+  "Stove Repair vs. replacement decision guidance",
+  "Trained and licensed stove repair experts",
+  "Fair and honest appliance repair pricing",
+  "Stove repair service for major brands",
+  "Home appliance repair cost guide"
+]}
 ----
     <Layout title="Air Conditioner Repair Cost - Labor & Parts Pricing Guide" description="Click for air conditioner repair cost & helpfull tips! Take control of your air conditioner repair expenses with our expert advice.  Call: (323) 870-4790">
 <div id="maincontent">
