@@ -4,7 +4,78 @@ import Offers from '../components/Offers.jsx'
 import { Brands } from '../components/brands/Brands.jsx'
 import '../styles/global.css';
 import "../../components/css/style_price.css";
-const structuredData = {}
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "serviceType": "Commercial Stove Repair",
+  "name": "Commercial Stove Repair Cost - Same Day Appliance Repair",
+  "url": "https://samedayappliance.repair/commercial-stove-repair-cost/",
+  "provider": {
+    "@type": "LocalBusiness",
+    "name": "Same Day Appliance Repair",
+    "image": "https://samedayappliance.repair/images/same-day-appliance-repair-logo-2.webp",
+    "telephone": "+1-323-870-4790",
+    "priceRange": "$$",
+    "address": {
+      "@type": "PostalAddress",
+      "addressRegion": "CA",
+      "addressCountry": "US"
+    }
+  },
+  "description": "Commercial stove repair pricing guide for common labor services. Transparent quotes, maintenance pricing, and brand-specific diagnostics from expert technicians.",
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Commercial Stove Repair Pricing",
+    "itemListElement": [
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Service Fee (waived if repair proceeds)"}, "price": "80", "priceCurrency": "USD"},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Annual Maintenance - Single Unit"}, "price": "125", "priceCurrency": "USD"},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Annual Maintenance - Multiple Units (per unit)"}, "price": "80", "priceCurrency": "USD"},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Burner Issues Replacement (per burner)"}, "priceSpecification": {"@type": "PriceSpecification", "minPrice": 100, "maxPrice": 250, "priceCurrency": "USD"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Oven Thermostat Replacement"}, "priceSpecification": {"@type": "PriceSpecification", "minPrice": 100, "maxPrice": 300, "priceCurrency": "USD"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Ignition System Replacement"}, "priceSpecification": {"@type": "PriceSpecification", "minPrice": 100, "maxPrice": 250, "priceCurrency": "USD"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Gas Valve Replacement"}, "priceSpecification": {"@type": "PriceSpecification", "minPrice": 150, "maxPrice": 350, "priceCurrency": "USD"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Pilot Light Replacement"}, "priceSpecification": {"@type": "PriceSpecification", "minPrice": 100, "maxPrice": 200, "priceCurrency": "USD"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Safety Valves Replacement"}, "priceSpecification": {"@type": "PriceSpecification", "minPrice": 150, "maxPrice": 350, "priceCurrency": "USD"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Control Panel Replacement"}, "priceSpecification": {"@type": "PriceSpecification", "minPrice": 150, "maxPrice": 400, "priceCurrency": "USD"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Heating Elements Replacement (Electric Stove)"}, "priceSpecification": {"@type": "PriceSpecification", "minPrice": 100, "maxPrice": 250, "priceCurrency": "USD"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Oven Door Hinge or Seal Replacement"}, "priceSpecification": {"@type": "PriceSpecification", "minPrice": 100, "maxPrice": 250, "priceCurrency": "USD"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Electrical Issues Repair"}, "priceSpecification": {"@type": "PriceSpecification", "minPrice": 150, "maxPrice": 400, "priceCurrency": "USD"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Convection Fan Replacement"}, "priceSpecification": {"@type": "PriceSpecification", "minPrice": 100, "maxPrice": 300, "priceCurrency": "USD"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Griddle Surface Replacement"}, "priceSpecification": {"@type": "PriceSpecification", "minPrice": 150, "maxPrice": 350, "priceCurrency": "USD"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Broiler Components Replacement"}, "priceSpecification": {"@type": "PriceSpecification", "minPrice": 100, "maxPrice": 300, "priceCurrency": "USD"}}
+    ]
+  },
+  "brand": [
+    {"@type": "Brand", "name": "Vulcan"},
+    {"@type": "Brand", "name": "Wolf"},
+    {"@type": "Brand", "name": "Garland"},
+    {"@type": "Brand", "name": "Southbend"},
+    {"@type": "Brand", "name": "Imperial"},
+    {"@type": "Brand", "name": "Blodgett"},
+    {"@type": "Brand", "name": "US Range"},
+    {"@type": "Brand", "name": "Montague"},
+    {"@type": "Brand", "name": "Bakers Pride"},
+    {"@type": "Brand", "name": "BlueStar"},
+    {"@type": "Brand", "name": "Electrolux"},
+    {"@type": "Brand", "name": "American Range"},
+    {"@type": "Brand", "name": "Jade Range"},
+    {"@type": "Brand", "name": "Pitco"},
+    {"@type": "Brand", "name": "Turbo Air"}
+  ],
+  "knowsAbout": [
+    "Commercial stove repair services",
+    "Gas and electric burner diagnostics",
+    "Ignition and thermostat troubleshooting",
+    "Oven and griddle heating issues",
+    "Same-day commercial kitchen appliance repair",
+    "Preventative stove maintenance programs",
+    "Pilot light and safety valve repair",
+    "Repairing electrical stove control systems",
+    "Restaurant-grade stove service in Los Angeles",
+    "Industrial oven and broiler part replacements"
+  ]
+}
+
 ----
     <Layout title="Commercial Stove Repair Cost - Full Pricing Guide" description="Click for commercial stove repair cost & helpfull tips! Take control of your air conditioner repair expenses with our expert advice.  Call: (323) 870-4790">
 <div id="maincontent">

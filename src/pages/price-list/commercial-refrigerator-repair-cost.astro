@@ -4,7 +4,86 @@ import Offers from '../components/Offers.jsx'
 import { Brands } from '../components/brands/Brands.jsx'
 import '../styles/global.css';
 import "../../components/css/style_price.css";
-const structuredData = {}
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "serviceType": "Commercial Refrigerator Repair",
+  "name": "Commercial Refrigerator Repair Cost - Same Day Appliance Repair",
+  "url": "https://samedayappliance.repair/commercial-refrigerator-repair-cost/",
+  "provider": {
+    "@type": "LocalBusiness",
+    "name": "Same Day Appliance Repair",
+    "image": "https://samedayappliance.repair/images/same-day-appliance-repair-logo-2.webp",
+    "telephone": "+1-323-870-4790",
+    "priceRange": "$$",
+    "address": {
+      "@type": "PostalAddress",
+      "addressRegion": "CA",
+      "addressCountry": "US"
+    }
+  },
+  "description": "Transparent commercial refrigerator repair pricing including service fees, labor estimates, and brand-specific cost expectations. Same-day professional repairs available.",
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Commercial Refrigerator Repair Pricing",
+    "itemListElement": [
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Service Fee (waived if repair proceeds)"}, "price": "80", "priceCurrency": "USD"},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Annual Maintenance - Single Unit"}, "price": "125", "priceCurrency": "USD"},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Annual Maintenance - Multiple Units (per unit)"}, "price": "80", "priceCurrency": "USD"},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Walk-In Refrigerator Maintenance"}, "price": "250", "priceCurrency": "USD"},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Compressor Replacement"}, "priceSpecification": {"@type": "PriceSpecification", "minPrice": 450, "maxPrice": 900, "priceCurrency": "USD"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Refrigerant Leak Repair"}, "priceSpecification": {"@type": "PriceSpecification", "minPrice": 150, "maxPrice": 400, "priceCurrency": "USD"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Thermostat Replacement"}, "priceSpecification": {"@type": "PriceSpecification", "minPrice": 100, "maxPrice": 300, "priceCurrency": "USD"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Evaporator Fan Motor Replacement"}, "priceSpecification": {"@type": "PriceSpecification", "minPrice": 120, "maxPrice": 350, "priceCurrency": "USD"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Condenser Fan Motor Replacement"}, "priceSpecification": {"@type": "PriceSpecification", "minPrice": 120, "maxPrice": 350, "priceCurrency": "USD"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Door Gasket Replacement"}, "priceSpecification": {"@type": "PriceSpecification", "minPrice": 50, "maxPrice": 150, "priceCurrency": "USD"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Defrost Heater Replacement"}, "priceSpecification": {"@type": "PriceSpecification", "minPrice": 100, "maxPrice": 300, "priceCurrency": "USD"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Control Board Replacement"}, "priceSpecification": {"@type": "PriceSpecification", "minPrice": 150, "maxPrice": 400, "priceCurrency": "USD"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Start Relay Replacement"}, "priceSpecification": {"@type": "PriceSpecification", "minPrice": 80, "maxPrice": 200, "priceCurrency": "USD"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Drain Line Clearing"}, "priceSpecification": {"@type": "PriceSpecification", "minPrice": 75, "maxPrice": 200, "priceCurrency": "USD"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Interior Lighting Fixture Replacement"}, "priceSpecification": {"@type": "PriceSpecification", "minPrice": 50, "maxPrice": 150, "priceCurrency": "USD"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Icemaker Issues Repair"}, "priceSpecification": {"@type": "PriceSpecification", "minPrice": 100, "maxPrice": 300, "priceCurrency": "USD"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Unusual Noises Repair"}, "priceSpecification": {"@type": "PriceSpecification", "minPrice": 75, "maxPrice": 300, "priceCurrency": "USD"}}
+    ]
+  },
+  "brand": [
+    {"@type": "Brand", "name": "True"},
+    {"@type": "Brand", "name": "Turbo-Air"},
+    {"@type": "Brand", "name": "Hoshizaki"},
+    {"@type": "Brand", "name": "Hussmann"},
+    {"@type": "Brand", "name": "Frigoglass"},
+    {"@type": "Brand", "name": "AHT Cooling Systems"},
+    {"@type": "Brand", "name": "Coldline"},
+    {"@type": "Brand", "name": "Everest"},
+    {"@type": "Brand", "name": "Felix Storch"},
+    {"@type": "Brand", "name": "Summit Appliance"},
+    {"@type": "Brand", "name": "Conental Refrigerator"},
+    {"@type": "Brand", "name": "Perlick"},
+    {"@type": "Brand", "name": "Traulsen"},
+    {"@type": "Brand", "name": "Beverage-Air"},
+    {"@type": "Brand", "name": "Randell"},
+    {"@type": "Brand", "name": "Migali"},
+    {"@type": "Brand", "name": "Avantco"},
+    {"@type": "Brand", "name": "Delfield"},
+    {"@type": "Brand", "name": "Kool-It"},
+    {"@type": "Brand", "name": "Maxx-cold"},
+    {"@type": "Brand", "name": "Victory"},
+    {"@type": "Brand", "name": "Arctic-Air"},
+    {"@type": "Brand", "name": "southbend"}
+  ],
+  "knowsAbout": [
+    "Commercial refrigerator repair costs",
+    "Compressor and refrigerant repair",
+    "Refrigerator cooling issues",
+    "Fan motor and thermostat repairs",
+    "Same-day walk-in cooler repair",
+    "Refrigerator maintenance pricing",
+    "Diagnosing freezer control board issues",
+    "Gasket and door seal replacement",
+    "Drain line and defrost heater service",
+    "Energy-efficient commercial refrigerator repair"
+  ]
+}
 ----
     <Layout title="Commercial Refrigerator Repair Cost - Full Pricing Guide" description="Click for commercial refrigerator repair cost & helpfull tips! Take control of your air conditioner repair expenses with our expert advice.  Call: (323) 870-4790">
 <div id="maincontent">

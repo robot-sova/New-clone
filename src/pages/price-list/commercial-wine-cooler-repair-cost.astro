@@ -4,7 +4,75 @@ import Offers from '../components/Offers.jsx'
 import { Brands } from '../components/brands/Brands.jsx'
 import '../styles/global.css';
 import "../../components/css/style_price.css";
-const structuredData = {}
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "serviceType": "Commercial Wine Cooler Repair",
+  "name": "Commercial Wine Cooler Repair Cost - Same Day Appliance Repair",
+  "url": "https://samedayappliance.repair/commercial-wine-cooler-repair-cost/",
+  "provider": {
+    "@type": "LocalBusiness",
+    "name": "Same Day Appliance Repair",
+    "image": "https://samedayappliance.repair/images/same-day-appliance-repair-logo-2.webp",
+    "telephone": "+1-323-870-4790",
+    "priceRange": "$$",
+    "address": {
+      "@type": "PostalAddress",
+      "addressRegion": "CA",
+      "addressCountry": "US"
+    }
+  },
+  "description": "Accurate pricing for commercial wine cooler repair services, including thermostat, compressor, and control board replacements. Same-day service available in Los Angeles.",
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Commercial Wine Cooler Repair Pricing",
+    "itemListElement": [
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Service Fee (waived if repair proceeds)"}, "price": "80", "priceCurrency": "USD"},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Annual Maintenance - Single Unit"}, "price": "125", "priceCurrency": "USD"},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Annual Maintenance - Multiple Units (per unit)"}, "price": "80", "priceCurrency": "USD"},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Thermostat Replacement"}, "priceSpecification": {"@type": "PriceSpecification", "minPrice": 100, "maxPrice": 150, "priceCurrency": "USD"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Fan Motor Replacement"}, "priceSpecification": {"@type": "PriceSpecification", "minPrice": 120, "maxPrice": 170, "priceCurrency": "USD"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Compressor Replacement"}, "priceSpecification": {"@type": "PriceSpecification", "minPrice": 150, "maxPrice": 200, "priceCurrency": "USD"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Door Seal Repair"}, "priceSpecification": {"@type": "PriceSpecification", "minPrice": 80, "maxPrice": 120, "priceCurrency": "USD"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Electrical Failures"}, "priceSpecification": {"@type": "PriceSpecification", "minPrice": 100, "maxPrice": 150, "priceCurrency": "USD"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Coolant Leak Repair"}, "priceSpecification": {"@type": "PriceSpecification", "minPrice": 140, "maxPrice": 180, "priceCurrency": "USD"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Blocked Drain Lines"}, "priceSpecification": {"@type": "PriceSpecification", "minPrice": 90, "maxPrice": 130, "priceCurrency": "USD"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Control Board Replacement"}, "priceSpecification": {"@type": "PriceSpecification", "minPrice": 130, "maxPrice": 180, "priceCurrency": "USD"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Evaporator Coil Replacement"}, "priceSpecification": {"@type": "PriceSpecification", "minPrice": 110, "maxPrice": 160, "priceCurrency": "USD"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Sensor Issues Repair"}, "priceSpecification": {"@type": "PriceSpecification", "minPrice": 95, "maxPrice": 145, "priceCurrency": "USD"}}
+    ]
+  },
+  "brand": [
+    {"@type": "Brand", "name": "Whynter"},
+    {"@type": "Brand", "name": "Samsung"},
+    {"@type": "Brand", "name": "GE Appliances"},
+    {"@type": "Brand", "name": "LG Electronics"},
+    {"@type": "Brand", "name": "Haier"},
+    {"@type": "Brand", "name": "Vinotemp"},
+    {"@type": "Brand", "name": "Magic Chef"},
+    {"@type": "Brand", "name": "Thermador"},
+    {"@type": "Brand", "name": "Sub-zero"},
+    {"@type": "Brand", "name": "Frigidaire"},
+    {"@type": "Brand", "name": "NewAir"},
+    {"@type": "Brand", "name": "KitchenAid"},
+    {"@type": "Brand", "name": "Danby"},
+    {"@type": "Brand", "name": "Miele"},
+    {"@type": "Brand", "name": "Viking"},
+    {"@type": "Brand", "name": "Whirlpool"}
+  ],
+  "knowsAbout": [
+    "Commercial wine cooler repair pricing",
+    "Same-day wine cooler diagnostics",
+    "Wine cooler thermostat and fan motor service",
+    "Compressor and control board repair",
+    "Door seal and humidity calibration",
+    "Blocked drain and coolant leak repair",
+    "Los Angeles wine cooler appliance repair",
+    "Display and sensor troubleshooting",
+    "Annual wine cooler maintenance plans",
+    "Energy-efficient wine storage repairs"
+  ]
+}
 ----
     <Layout title="Commercial  Wine Cooler Repair Cost - Full Pricing Guide" description="Click for commercial wine cooler repair cost & helpfull tips! Take control of your air conditioner repair expenses with our expert advice.  Call: (323) 870-4790">
 <div id="maincontent">

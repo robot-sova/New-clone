@@ -4,7 +4,66 @@ import Offers from '../components/Offers.jsx'
 import { Brands } from '../components/brands/Brands.jsx'
 import '../styles/global.css';
 import "../../components/css/style_price.css";
-const structuredData = {}
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "serviceType": "Commercial Slushie Machine Repair",
+  "name": "Commercial Slushie Machine Repair Cost - Same Day Appliance Repair",
+  "url": "https://samedayappliance.repair/commercial-slushie-machine-repair-cost/",
+  "provider": {
+    "@type": "LocalBusiness",
+    "name": "Same Day Appliance Repair",
+    "image": "https://samedayappliance.repair/images/same-day-appliance-repair-logo-2.webp",
+    "telephone": "+1-323-870-4790",
+    "priceRange": "$$",
+    "address": {
+      "@type": "PostalAddress",
+      "addressRegion": "CA",
+      "addressCountry": "US"
+    }
+  },
+  "description": "Transparent labor pricing for commercial slushie machine repair. Detailed cost breakdown for common service issues and same-day diagnostics.",
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Commercial Slushie Machine Repair Pricing",
+    "itemListElement": [
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Service Fee (waived if repair proceeds)"}, "price": "80", "priceCurrency": "USD"},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Annual Maintenance - Single Unit"}, "price": "125", "priceCurrency": "USD"},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Annual Maintenance - Multiple Units (per unit)"}, "price": "80", "priceCurrency": "USD"},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Clogged Nozzles"}, "priceSpecification": {"@type": "PriceSpecification", "minPrice": 50, "maxPrice": 100, "priceCurrency": "USD"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Faulty Compressor"}, "priceSpecification": {"@type": "PriceSpecification", "minPrice": 100, "maxPrice": 250, "priceCurrency": "USD"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Worn Seals or Gaskets"}, "priceSpecification": {"@type": "PriceSpecification", "minPrice": 75, "maxPrice": 150, "priceCurrency": "USD"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Malfunctioning Thermostat"}, "priceSpecification": {"@type": "PriceSpecification", "minPrice": 60, "maxPrice": 120, "priceCurrency": "USD"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Broken Mixing Arms"}, "priceSpecification": {"@type": "PriceSpecification", "minPrice": 80, "maxPrice": 160, "priceCurrency": "USD"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Electrical Issues"}, "priceSpecification": {"@type": "PriceSpecification", "minPrice": 75, "maxPrice": 200, "priceCurrency": "USD"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Pump Failure"}, "priceSpecification": {"@type": "PriceSpecification", "minPrice": 100, "maxPrice": 220, "priceCurrency": "USD"}}
+    ]
+  },
+  "brand": [
+    {"@type": "Brand", "name": "Bunn"},
+    {"@type": "Brand", "name": "Faby"},
+    {"@type": "Brand", "name": "Elmeco"},
+    {"@type": "Brand", "name": "Cecilware"},
+    {"@type": "Brand", "name": "SaniServ"},
+    {"@type": "Brand", "name": "Stoelting"},
+    {"@type": "Brand", "name": "Spaceman"},
+    {"@type": "Brand", "name": "Taylor"},
+    {"@type": "Brand", "name": "Frosty Factory"},
+    {"@type": "Brand", "name": "Wilch"}
+  ],
+  "knowsAbout": [
+    "Commercial slushie machine repair costs",
+    "Frozen drink machine maintenance",
+    "Diagnosing compressor and thermostat problems",
+    "Slush machine nozzle and gasket service",
+    "Same-day slushie machine repair",
+    "Frozen beverage machine pump repair",
+    "Electrical diagnostics for frozen drink dispensers",
+    "Sanitizing and cleaning slushie machines",
+    "Preventative maintenance for frozen drink equipment",
+    "Commercial kitchen appliance service in Los Angeles"
+  ]
+}
 ----
     <Layout title="Commercial Slushie Repair Cost - Full Pricing Guide" description="Click for commercial slushie repair cost & helpfull tips! Take control of your air conditioner repair expenses with our expert advice.  Call: (323) 870-4790">
 <div id="maincontent">

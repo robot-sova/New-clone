@@ -4,7 +4,89 @@ import Offers from '../components/Offers.jsx'
 import { Brands } from '../components/brands/Brands.jsx'
 import '../styles/global.css';
 import "../../components/css/style_price.css";
-const structuredData = {}
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "serviceType": "Commercial Oven Repair",
+  "name": "Commercial Oven Repair Cost - Same Day Appliance Repair",
+  "url": "https://samedayappliance.repair/commercial-oven-repair-cost/",
+  "provider": {
+    "@type": "LocalBusiness",
+    "name": "Same Day Appliance Repair",
+    "image": "https://samedayappliance.repair/images/same-day-appliance-repair-logo-2.webp",
+    "telephone": "+1-323-870-4790",
+    "priceRange": "$$",
+    "address": {
+      "@type": "PostalAddress",
+      "addressRegion": "CA",
+      "addressCountry": "US"
+    }
+  },
+  "description": "Transparent commercial oven repair pricing including maintenance, labor, and brand-specific repair cost ranges. Expert commercial appliance service with same-day options.",
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Commercial Oven Repair Pricing",
+    "itemListElement": [
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Service Fee (waived if repair proceeds)"}, "price": "80", "priceCurrency": "USD"},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Annual Maintenance - Single Unit"}, "price": "125", "priceCurrency": "USD"},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Annual Maintenance - Multiple Units (per unit)"}, "price": "80", "priceCurrency": "USD"},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Thermostat Replacement"}, "priceSpecification": {"@type": "PriceSpecification", "minPrice": 150, "maxPrice": 300, "priceCurrency": "USD"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Ignitor Replacement"}, "priceSpecification": {"@type": "PriceSpecification", "minPrice": 100, "maxPrice": 250, "priceCurrency": "USD"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Heating Element Replacement"}, "priceSpecification": {"@type": "PriceSpecification", "minPrice": 100, "maxPrice": 200, "priceCurrency": "USD"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Gas Leak Repair"}, "priceSpecification": {"@type": "PriceSpecification", "minPrice": 150, "maxPrice": 400, "priceCurrency": "USD"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Control Board Replacement"}, "priceSpecification": {"@type": "PriceSpecification", "minPrice": 150, "maxPrice": 350, "priceCurrency": "USD"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Door Repair (Hinge or Seal)"}, "priceSpecification": {"@type": "PriceSpecification", "minPrice": 100, "maxPrice": 250, "priceCurrency": "USD"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Fan Motor Replacement (Convection Ovens)"}, "priceSpecification": {"@type": "PriceSpecification", "minPrice": 120, "maxPrice": 300, "priceCurrency": "USD"}}
+    ]
+  },
+  "brand": [
+    {"@type": "Brand", "name": "Middleby Marshalls"},
+    {"@type": "Brand", "name": "Bakers Pride"},
+    {"@type": "Brand", "name": "Blodgett"},
+    {"@type": "Brand", "name": "Marsal & Sons"},
+    {"@type": "Brand", "name": "Lincoln"},
+    {"@type": "Brand", "name": "Vulcan"},
+    {"@type": "Brand", "name": "Southbend"},
+    {"@type": "Brand", "name": "Garland"},
+    {"@type": "Brand", "name": "Hobart"},
+    {"@type": "Brand", "name": "turbochef"},
+    {"@type": "Brand", "name": "Rational"},
+    {"@type": "Brand", "name": "Alto-Shaam"},
+    {"@type": "Brand", "name": "Electrolux Professional"},
+    {"@type": "Brand", "name": "Merrychef"},
+    {"@type": "Brand", "name": "Doyon"},
+    {"@type": "Brand", "name": "Peerless"},
+    {"@type": "Brand", "name": "Waring"},
+    {"@type": "Brand", "name": "Cleveland Range"},
+    {"@type": "Brand", "name": "Imperial"},
+    {"@type": "Brand", "name": "Montague"},
+    {"@type": "Brand", "name": "BKI"},
+    {"@type": "Brand", "name": "Carter-Hoffmann"},
+    {"@type": "Brand", "name": "Cres Cor"},
+    {"@type": "Brand", "name": "Equipex"},
+    {"@type": "Brand", "name": "FWE"},
+    {"@type": "Brand", "name": "Lang"},
+    {"@type": "Brand", "name": "Moffat"},
+    {"@type": "Brand", "name": "Toastmaster"},
+    {"@type": "Brand", "name": "Winholt"},
+    {"@type": "Brand", "name": "Mainstreet"},
+    {"@type": "Brand", "name": "Kratos"}
+  ],
+  "knowsAbout": [
+    "Commercial oven repair costs",
+    "Oven thermostat and ignitor replacement",
+    "Gas oven safety repairs",
+    "Electric heating element replacement",
+    "Convection oven fan motor repair",
+    "Control board diagnostics and repair",
+    "Same-day commercial appliance service",
+    "Commercial oven door hinge and seal fixes",
+    "Annual commercial oven maintenance service",
+    "Certified commercial kitchen equipment repair",
+    "Reliable oven repair in Los Angeles",
+    "Transparent appliance repair estimates"
+  ]
+}
 ----
     <Layout title="Commercial Oven Repair Cost - Full Pricing Guide - Tips" description="Click for commercial oven repair cost & helpfull tips! Take control of your air conditioner repair expenses with our expert advice.  Call: (323) 870-4790">
 <div id="maincontent">

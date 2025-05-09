@@ -4,7 +4,76 @@ import Offers from '../components/Offers.jsx'
 import { Brands } from '../components/brands/Brands.jsx'
 import '../styles/global.css';
 import "../../components/css/style_price.css";
-const structuredData = {}
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "serviceType": "Commercial Showcase Refrigerator Repair",
+  "name": "Commercial Showcase Refrigerator Repair Cost - Same Day Appliance Repair",
+  "url": "https://samedayappliance.repair/commercial-showcase-refrigerator-repair-cost/",
+  "provider": {
+    "@type": "LocalBusiness",
+    "name": "Same Day Appliance Repair",
+    "image": "https://samedayappliance.repair/images/same-day-appliance-repair-logo-2.webp",
+    "telephone": "+1-323-870-4790",
+    "priceRange": "$$",
+    "address": {
+      "@type": "PostalAddress",
+      "addressRegion": "CA",
+      "addressCountry": "US"
+    }
+  },
+  "description": "Full-service pricing breakdown for commercial showcase refrigerator repair. Transparent labor estimates, service fees, and expert diagnostics from Same Day Appliance Repair.",
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Commercial Showcase Refrigerator Repair Pricing",
+    "itemListElement": [
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Service Fee (waived if repair proceeds)"}, "price": "80", "priceCurrency": "USD"},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Annual Maintenance - Single Unit"}, "price": "125", "priceCurrency": "USD"},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Annual Maintenance - Multiple Units (per unit)"}, "price": "80", "priceCurrency": "USD"},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Thermostat Failure"}, "priceSpecification": {"@type": "PriceSpecification", "minPrice": 100, "maxPrice": 200, "priceCurrency": "USD"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Compressor Issues"}, "priceSpecification": {"@type": "PriceSpecification", "minPrice": 200, "maxPrice": 450, "priceCurrency": "USD"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Fan Motor Malfunction"}, "priceSpecification": {"@type": "PriceSpecification", "minPrice": 100, "maxPrice": 250, "priceCurrency": "USD"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Door Seal Wear"}, "priceSpecification": {"@type": "PriceSpecification", "minPrice": 50, "maxPrice": 150, "priceCurrency": "USD"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Coolant Leak"}, "priceSpecification": {"@type": "PriceSpecification", "minPrice": 100, "maxPrice": 300, "priceCurrency": "USD"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Defrost Heater Failure"}, "priceSpecification": {"@type": "PriceSpecification", "minPrice": 80, "maxPrice": 200, "priceCurrency": "USD"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Electronic Control Board Problems"}, "priceSpecification": {"@type": "PriceSpecification", "minPrice": 150, "maxPrice": 400, "priceCurrency": "USD"}}
+    ]
+  },
+  "brand": [
+    {"@type": "Brand", "name": "True Manufacturing"},
+    {"@type": "Brand", "name": "Turbo Air"},
+    {"@type": "Brand", "name": "Beverage-Air"},
+    {"@type": "Brand", "name": "Traulsen"},
+    {"@type": "Brand", "name": "Delfield"},
+    {"@type": "Brand", "name": "Hoshizaki"},
+    {"@type": "Brand", "name": "Nor-Lake"},
+    {"@type": "Brand", "name": "Continental"},
+    {"@type": "Brand", "name": "Arctic Air"},
+    {"@type": "Brand", "name": "Avantco"},
+    {"@type": "Brand", "name": "Kool-It"},
+    {"@type": "Brand", "name": "Migali"},
+    {"@type": "Brand", "name": "Maxx Cold"},
+    {"@type": "Brand", "name": "Victory"},
+    {"@type": "Brand", "name": "Fogel"},
+    {"@type": "Brand", "name": "Master-Bilt"},
+    {"@type": "Brand", "name": "Federal Industries"},
+    {"@type": "Brand", "name": "Excellence Industries"},
+    {"@type": "Brand", "name": "Summit"},
+    {"@type": "Brand", "name": "Blue Air"}
+  ],
+  "knowsAbout": [
+    "Commercial showcase refrigerator repair costs",
+    "Glass door refrigerator cooling issues",
+    "Thermostat and compressor diagnostics",
+    "Same-day commercial fridge repair in Los Angeles",
+    "Energy-efficient refrigeration system maintenance",
+    "Fan and defrost system troubleshooting",
+    "Display case refrigeration repair",
+    "LED lighting and control board repair",
+    "Routine commercial refrigerator maintenance pricing",
+    "Transparent showcase fridge repair estimates"
+  ]
+}
 ----
     <Layout title="Commercial Showcase Refrigerator Repair Cost - Full Pricing Guide" description="Commercial showcase refrigerator repair cost guide & helpfull tips! Take control of your air conditioner repair expenses with our expert advice. (323) 870-4790">
 <div id="maincontent">

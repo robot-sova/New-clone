@@ -4,7 +4,87 @@ import Offers from '../components/Offers.jsx'
 import { Brands } from '../components/brands/Brands.jsx'
 import '../styles/global.css';
 import "../../components/css/style_price.css";
-const structuredData = {}
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "serviceType": "Cooktop Repair",
+  "name": "Cooktop Repair Cost - Same Day Appliance Repair",
+  "url": "https://samedayappliance.repair/cooktop-repair-cost/",
+  "provider": {
+    "@type": "LocalBusiness",
+    "name": "Same Day Appliance Repair",
+    "image": "https://samedayappliance.repair/images/same-day-appliance-repair-logo-2.webp",
+    "telephone": "+1-323-870-4790",
+    "priceRange": "$$",
+    "address": {
+      "@type": "PostalAddress",
+      "addressRegion": "CA",
+      "addressCountry": "US"
+    }
+  },
+  "description": "Transparent cooktop repair pricing including maintenance, labor, and brand-specific repair cost ranges. Expert gas and electric cooktop service with same-day options.",
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Cooktop Repair Pricing",
+    "itemListElement": [
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Service Fee (waived if repair proceeds)"}, "price": "89", "priceCurrency": "USD"},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Annual Maintenance - Per Unit"}, "price": "80", "priceCurrency": "USD"},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Gas Cooktop Burner Replacement"}, "priceSpecification": {"@type": "PriceSpecification", "minPrice": 150, "maxPrice": 250, "priceCurrency": "USD"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Electric Cooktop Burner Replacement"}, "priceSpecification": {"@type": "PriceSpecification", "minPrice": 100, "maxPrice": 200, "priceCurrency": "USD"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Cooktop Igniter Replacement (Gas)"}, "priceSpecification": {"@type": "PriceSpecification", "minPrice": 150, "maxPrice": 300, "priceCurrency": "USD"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Cooktop Control Board Replacement"}, "priceSpecification": {"@type": "PriceSpecification", "minPrice": 250, "maxPrice": 400, "priceCurrency": "USD"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Cooktop Gas Valve Replacement"}, "priceSpecification": {"@type": "PriceSpecification", "minPrice": 150, "maxPrice": 350, "priceCurrency": "USD"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Cooktop Broiler Element Replacement"}, "priceSpecification": {"@type": "PriceSpecification", "minPrice": 100, "maxPrice": 250, "priceCurrency": "USD"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Cooktop Oven Temperature Sensor Replacement"}, "priceSpecification": {"@type": "PriceSpecification", "minPrice": 100, "maxPrice": 200, "priceCurrency": "USD"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Cooktop Safety Valve Replacement (Gas)"}, "priceSpecification": {"@type": "PriceSpecification", "minPrice": 150, "maxPrice": 350, "priceCurrency": "USD"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Cooktop Spark Module Replacement (Gas)"}, "priceSpecification": {"@type": "PriceSpecification", "minPrice": 100, "maxPrice": 200, "priceCurrency": "USD"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Cooktop Timer or Clock Replacement"}, "priceSpecification": {"@type": "PriceSpecification", "minPrice": 100, "maxPrice": 300, "priceCurrency": "USD"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Cooktop Drip Pans Replacement (Electric, per pan)"}, "priceSpecification": {"@type": "PriceSpecification", "minPrice": 85, "maxPrice": 150, "priceCurrency": "USD"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Cooktop Wiring and Electrical Components"}, "priceSpecification": {"@type": "PriceSpecification", "minPrice": 100, "maxPrice": 400, "priceCurrency": "USD"}}
+    ]
+  },
+  "brand": [
+    {"@type": "Brand", "name": "General Electric"},
+    {"@type": "Brand", "name": "Whirlpool"},
+    {"@type": "Brand", "name": "KitchenAid"},
+    {"@type": "Brand", "name": "Samsung"},
+    {"@type": "Brand", "name": "LG Electronics"},
+    {"@type": "Brand", "name": "Bosch"},
+    {"@type": "Brand", "name": "Frigidaire"},
+    {"@type": "Brand", "name": "Maytag"},
+    {"@type": "Brand", "name": "Kenmore"},
+    {"@type": "Brand", "name": "Jenn-Air"},
+    {"@type": "Brand", "name": "Thermador"},
+    {"@type": "Brand", "name": "Wolf"},
+    {"@type": "Brand", "name": "Electrolux"},
+    {"@type": "Brand", "name": "Viking"},
+    {"@type": "Brand", "name": "Dacor"},
+    {"@type": "Brand", "name": "Bertazzoni"},
+    {"@type": "Brand", "name": "La Cornue"},
+    {"@type": "Brand", "name": "Miele"},
+    {"@type": "Brand", "name": "Fisher & Paykel"},
+    {"@type": "Brand", "name": "Gaggenau"},
+    {"@type": "Brand", "name": "Haier"},
+    {"@type": "Brand", "name": "Smeg"},
+    {"@type": "Brand", "name": "BlueStar"},
+    {"@type": "Brand", "name": "Monogram"},
+    {"@type": "Brand", "name": "Café"}
+  ],
+  "knowsAbout": [
+    "Cooktop burner replacement",
+    "Gas cooktop valve repairs",
+    "Electric cooktop component repairs",
+    "Cooktop igniter and spark module replacement",
+    "Temperature sensor and broiler fixes",
+    "Control board and display issues",
+    "Appliance wiring and electrical safety",
+    "Same-day cooktop service",
+    "Cooktop maintenance service",
+    "Affordable cooktop repair in Los Angeles",
+    "Certified cooktop technicians",
+    "Flat-rate appliance service pricing"
+  ]
+}
 ----
     <Layout title="Cooktop Repair Cost - Labor & Parts Pricing - Ultimate Guide" description="Click for the real costs of cooktop repairs & helpfull tips! Find a reliable technicians, and make informed decisions. Call: (323) 870-4790">
 <div id="maincontent">

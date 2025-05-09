@@ -4,7 +4,72 @@ import Offers from '../components/Offers.jsx'
 import { Brands } from '../components/brands/Brands.jsx'
 import '../styles/global.css';
 import "../../components/css/style_price.css";
-const structuredData = {}
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "serviceType": "Commercial Walk-in Cooler Repair",
+  "name": "Commercial Walk-in Cooler Repair Cost - Same Day Appliance Repair",
+  "url": "https://samedayappliance.repair/commercial-walk-in-cooler-repair-cost/",
+  "provider": {
+    "@type": "LocalBusiness",
+    "name": "Same Day Appliance Repair",
+    "image": "https://samedayappliance.repair/images/same-day-appliance-repair-logo-2.webp",
+    "telephone": "+1-323-870-4790",
+    "priceRange": "$$",
+    "address": {
+      "@type": "PostalAddress",
+      "addressRegion": "CA",
+      "addressCountry": "US"
+    }
+  },
+  "description": "Clear labor pricing for commercial walk-in cooler repair, including diagnostics, same-day service options, and common repair cost ranges.",
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Commercial Walk-in Cooler Repair Pricing",
+    "itemListElement": [
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Service Fee (waived if repair proceeds)"}, "price": "80", "priceCurrency": "USD"},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Annual Maintenance - Walk-in Cooler"}, "price": "250", "priceCurrency": "USD"},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Faulty Door Seals Replacement"}, "priceSpecification": {"@type": "PriceSpecification", "minPrice": 100, "maxPrice": 250, "priceCurrency": "USD"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Malfunctioning Thermostat"}, "priceSpecification": {"@type": "PriceSpecification", "minPrice": 150, "maxPrice": 300, "priceCurrency": "USD"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Defective Evaporator Fan"}, "priceSpecification": {"@type": "PriceSpecification", "minPrice": 100, "maxPrice": 400, "priceCurrency": "USD"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Clogged Drain Lines"}, "priceSpecification": {"@type": "PriceSpecification", "minPrice": 80, "maxPrice": 200, "priceCurrency": "USD"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Refrigerant Leak"}, "priceSpecification": {"@type": "PriceSpecification", "minPrice": 200, "maxPrice": 500, "priceCurrency": "USD"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Compressor Failure"}, "priceSpecification": {"@type": "PriceSpecification", "minPrice": 300, "maxPrice": 600, "priceCurrency": "USD"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Dirty Condenser Coils"}, "priceSpecification": {"@type": "PriceSpecification", "minPrice": 100, "maxPrice": 300, "priceCurrency": "USD"}}
+    ]
+  },
+  "brand": [
+    {"@type": "Brand", "name": "Norlake"},
+    {"@type": "Brand", "name": "Kolpak"},
+    {"@type": "Brand", "name": "KPS Global"},
+    {"@type": "Brand", "name": "Master Bilt"},
+    {"@type": "Brand", "name": "Amerikooler"},
+    {"@type": "Brand", "name": "Thermo-Kool"},
+    {"@type": "Brand", "name": "Cooling Par Engineering"},
+    {"@type": "Brand", "name": "Imperial Brown"},
+    {"@type": "Brand", "name": "International Cold Storage"},
+    {"@type": "Brand", "name": "U.S. Cooler"},
+    {"@type": "Brand", "name": "Bally Refrigerated Boxes"},
+    {"@type": "Brand", "name": "ThermalRite"},
+    {"@type": "Brand", "name": "American Panel"},
+    {"@type": "Brand", "name": "Hussmann"},
+    {"@type": "Brand", "name": "Kysor"},
+    {"@type": "Brand", "name": "Tyler"}
+  ],
+  "knowsAbout": [
+    "Commercial walk-in cooler repair services",
+    "Walk-in cooler thermostat diagnostics",
+    "Evaporator and condenser fan troubleshooting",
+    "Refrigerant leak repair in commercial refrigeration",
+    "Same-day walk-in cooler service",
+    "Annual walk-in cooler maintenance plans",
+    "Walk-in cooler door gasket and seal fixes",
+    "Electrical and control system repair",
+    "Los Angeles commercial refrigeration diagnostics",
+    "Emergency walk-in cooler service near me"
+  ]
+}
+
 ----
     <Layout title="Commercial Walk In Cooler Repair Cost - Full Pricing Guide" description="Click for walk in cooler repair cost & helpfull tips! Take control of your air conditioner repair expenses with our expert advice.  Call: (323) 870-4790">
 <div id="maincontent">
